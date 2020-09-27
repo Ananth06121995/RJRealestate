@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, "/>
+    <meta charset="UTF-8">
+	<title>Responsuive Sliding Menu</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://zeptojs.com/zepto.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/assets/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!--Bootstrap-->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<style>
+	
+	html, body{
+	 max-width: 100%;
+    overflow-x: hidden;
+	}
+	.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+	
+	
+	.centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      }
+	  .text{
+	  font-size: 60px;
+	  color:#fff;
+	  animation-duration: 4s;
+      animation-delay: 2s;
+      animation-iteration-count: 1;
+	  }
+	  .text1{
+	  font-size: 60px;
+	  color:#fff;
+	  animation-duration: 4s;
+      animation-delay: 2s;
+      animation-iteration-count: 1;
+	  }
+	   .text2{
+	  
+	  font-size: 60px;
+	  color: #FBF4B5;
+	  animation-duration: 4s;
+      animation-delay: 2s;
+      animation-iteration-count: 1;
+	  }
+	 
+.about-us {
+	height: 500px;
+	margin-top: 1500px;
+	background-image:url('about us2.jpg');
+	width: 100%;
+	}
+ 
+ .title{
+    margin-left: 600px;
+	color: white;
+	}
+  .mod
+  {
+    margin-top:80px;
+	
+  }
+	.word{
+    margin-top: 80px;
+	color: white;
+	font-size: 25px;
+	}
+	.head{
+	 font-size: 22px;
+	 color: black;
+	 }
+	 .sites{
+	 height: 800px;
+	margin-top: 500px;
+	background-image:url('sites.jpg');
+	bakground-image: no repeat;
+	
+	}
+	.title1
+	{
+	margin-left: 600px;
+	color: white;
+	}
+	.gtext{
+	 font-size: 25px;
+	 }
+	.btn {
+     border: 2px solid black;
+     background-color: white;
+     color: black;
+     padding: 14px 28px;
+     font-size: 16px;
+     cursor: pointer;
+        }
+     .info {
+     border-color: #2196F3;
+     color: dodgerblue
+          }
+
+     .info:hover {
+      background: #2196F3;
+      color: white;
+          }
+	.btn info {
+	 margin-left: 250px;
+	
+	 }
+	 .row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color:white ;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo1 {
+  opacity: 0.6;
+  margin-left: 400px;
+}
+.demo2 {
+  opacity: 0.6;
+  margin-left: 200px;
+}
+.demo3 {
+  opacity: 0.6;
+  margin-left: 0px;
+}
+.demo4 {
+  opacity: 0.6;
+  margin-left: -200px;
+}
+.demo5{
+ opacity: 0.6;
+ margin-top: -50px;
+ margin-left: 800px;
+ }
+ .demo6{
+ opacity: 0.6;
+ margin-top: -50px;
+ margin-left: 900px;
+ }
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+  border: 4px solid black;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.outline{
+  border:4px solid white;
+  }
+  .testi{
+   height:4000px;
+   background-image:url('testimonial.jpg');
+   margin-top: 700px;
+   }
+   .testimonial{
+   background: white;
+   text-align: center;
+   padding: 30px 30px 50px;
+   margin: 0 15px 100px;
+   position: relative;
+   margin-top:168px;
+   }
+   .testimonial:before,
+   .testimonial:after{
+    content: "";
+	border-top: 40px solid white;
+	border-right: 125px solid transparent;
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	}
+	.testimonial:after{
+	 border-right:none;
+	 border-left: 125px solid transparent;
+	 left: auto;
+	 right: 0;
+	 }
+	 
+	 .testimonial .icon{
+	 display: inline-block;
+	 font-size: 80px;
+	 color: #f28a0b;
+	 margin-botttom: 20px;
+	 opacity: 0.6;
+	 }
+	 .testimonial .description{
+	 font-size: 16px;
+	 color: #777;
+	 text-align:justify;
+	 margin-bottom: 30px;
+	 opacity: 0.9;
+	 letter-spacing: -1px;
+	 }
+	 .testimonial .testimonial-content{
+	 width: 100%;
+	 position: absolute;
+	 left: 0;
+	 }
+	 .testimonial .pic{
+	 display: inline-block;
+	 border: 6px solid white;
+	 border-radius: 50%;
+	 box-shadow: 0 0 2px 2px #1a8cff;
+	 z-index: 1;
+	 position: relative;
+	 }
+	 .testimonial .pic img{
+	 width: 100%;
+	 height: auto;
+	 }
+	 .testimonial .title{
+	 font-size: 15px;
+	 font-weight: bold;
+	 color: white;
+	 text-transform: capitalize;
+	 margin: 0 0 5px 0;
+	 }
+	 .testimonial .post{
+	 display: block;
+	 font-size: 14px;
+	 color: #ffd9b8;
+	 }
+	 .pic img{
+	  width: 100px !important;
+	  height: 50px;
+	  }
+	@media  (max-width: 767px){
+	
+	.nav{
+   width: 103%;
+   }
+   .image{
+    width:200px;
+	height:60px;
+	}
+	   .myCarousel
+{
+	position: fixed;
+	cursor: pointer;
+
+	
+}	
+.carousel-inner > .item > img {
+    margin:  auto;
+    padding-top: 70px;
+    text-align: center;
+	width: 105%;
+	
+	}
+
+	  .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+	  
+      }
+	  .text{
+	  width: 150px;
+	  font-size: 20px;
+	  color:#fff;
+	 
+	  }
+	   .text1{
+	  width: 150px;
+	  font-size: 20px;
+	  color:#fff;
+	  }
+	  .text2{
+	  width: 150px;
+	  font-size: 20px;
+	  color: #FBF4B5;
+	  }
+	  .button {
+      background-color: #9932CC; ; /* Green */
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: auto;
+	  position: absolute;
+	  }
+	  .button1
+	  {
+	   left:23%;
+	   cursor: auto;
+	  }
+       .button2 {
+      background-color: #b3c6ff;  /* Green */
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+	  position:absolute;
+	  
+}
+	  .button3 {border-radius: 42px;
+	  left: 23%;
+	  text-decoration: none;
+	  }
+	   a:hover { 
+            text-decoration: none;
+			color: #fff;
+	
+			}
+	  .button2:hover
+	  {
+	  background-color:#809fff;
+	  }
+	   .button4 {
+      background-color: #994d00;  /* Green */
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+	  position:absolute;
+	  
+}
+	  .button5 {border-radius: 42px;
+	  left: 28%;
+	  text-decoration: none;
+	  }
+	   a:hover { 
+            text-decoration: none;
+			color: #fff;
+	
+			}
+	  .button4:hover
+	  {
+	  background-color: #4d2600;
+	  }
+.about-us {
+	margin-top: 500px;
+	background-image:url('about us2.jpg');
+	 max-width: 100%;
+	overflow-x: hidden;
+   	
+	
+	}
+	.mod
+  {
+    margin-top: -10px;
+	height: 150px;
+	width: 150px;
+	margin-left:100px;
+	}
+	 .word{
+    margin-top: -10px;
+	color: white;
+	font-size: 15px;
+	margin-left: 10px;
+	}
+	.title{
+    font-size:20px;
+	margin-left: 153px;
+	}
+   .sites{
+	height: 550px;
+	margin-top: 500px;
+	background-image:url('sites.jpg');
+	bakground-image: no repeat;
+    }
+	.title1{
+	   font-size:20px;
+	   margin-left: 160px;
+	   }
+	 .gtext{
+	 font-size: 15px;
+	 }
+	 .btn {
+     border: 2px solid black;
+     background-color: white;
+     color: black;
+     padding: 7px 14px;
+     font-size: 16px;
+     cursor: pointer;
+	 }
+	 .btn info {
+	 margin-left: 150px;
+	 
+	 }
+	 .info {
+     border-color: #2196F3;
+     color: dodgerblue
+          }
+
+     .info:hover {
+      background: #2196F3;
+      color: white;
+          }
+	.btn info {
+	 margin-left: 250px;
+	 }
+	.row > .column {
+  padding-right: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo1 {
+  opacity: 0.6;
+  margin-left: 400px;
+}
+.demo2 {
+  opacity: 0.6;
+  margin-left: 200px;
+}
+.demo3 {
+  opacity: 0.6;
+  margin-left: 0px;
+}
+.demo4 {
+  opacity: 0.6;
+  margin-left: -200px;
+}
+.demo5{
+ opacity: 0.6;
+ margin-top: -50px;
+ margin-left: 800px;
+ }
+ .demo6{
+ opacity: 0.6;
+ margin-top: -50px;
+ margin-left: 900px;
+ }
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+  border: 4px solid black;
+  height: 100px;
+  width: 100px;
+  margin-left:50px;
+  
+}
+#2{
+  padding-left: 5px;
+  }
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.outline{
+  border:4px solid white;
+  }
+	</style>
+</head>
+<body>
+	<div id="navbar" class="nav" style="position:fixed;z-index: 5;width: 100%;">
+		<div class="nav_header">
+			<div class="nav_title">
+            <img src="Real.png" class="image"/>
+            </div>
+        </div>
+        <div class="nav_btn">
+            <label for="nav_check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <input type="checkbox" name="" id="nav_check">
+        <div class="nav_links" style="font-family:Times New Roman;z-index: 5;">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">SITES</a>
+            <a href="#">DOCUMENTS</a>
+            <a href="#">TESTIMONIALS</a>
+            <a href="#">CONTACT</a>
+        </div>
+	</div>
+	
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-touch="true" style="position:absolute;z-index: 1;width: 105%;">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" style="position:absolute;z-index: 10;">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  
+    </ol>
+
+    <!-- Wrapper for slides -->
+    
+	<div class="carousel-inner" role="listbox" style="position:relative;z-index: 1;width: 105%;">
+      <div class="item active">
+        <img src="image1.jpg"  alt="Los Angeles" style="width:100%;">
+		<div class="centered">
+                    
+                    <div class="text animated zoomIn">Looking for <span style="color:#4169E1;">Land&nbsp;</span>Properties in<span style="color:#4169E1;">Tamil Nadu</span>???</div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image3.jpg" alt="Los Angeles" style="width:100%;">
+		<div class="centered">
+                    
+                    <div class="text1 animated zoomIn ">Welcome to<br> RJ Real <span style="color:#4169E1;">Estate</span>!!!</div>
+					
+                   
+        </div>
+      </div>
+	  <div class="item">
+        <img src="img22.jpg" alt="Los Angeles" style="width:2000px;">
+		<div class="centered">
+                    
+                    <div class="text2 animated fadeInDown"><span style="color:#000000;">Hire us!!</span> <br> To achieve your dream</div>
+					
+                   
+        </div>
+      </div>
+	
+     
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="position:absolute;z-index: 10;">
+      <span class="glyphicon glyphicon-chevron-left"style="margin-top:20px;"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next" style="position:absolute;z-index: 10;">
+      <span class="glyphicon glyphicon-chevron-right"style="margin-top:20px;"> </span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+ <div class="row">
+        <div class="about-us">
+           <h1 class="title"> ABOUT US</h1>
+		   <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2 content"><img src="aboutusicon.png"class="mod"></img>
+		   </div>
+		   <div class="col-sm-9 col-xs-12 col-md-9 col-lg-9 word" style="color:white;"> Our company RJ Real Estate was started in 1999  by s.vadivelan who is the managing director and with more than 18 years experience in the land process.Since We are an upcoming company in the industry.We refer the empty lands to our customers.We are continually striving to be dynamic and innovative in our approach to real estate transactions and to find more effective and efficient ways of doing things.The Company's vision is for the people to have a land on their own.We are having the lands all over Tamil Nadu with a midst of lush green environs.Our complete motto is to satisfy the customer needs of referring a land at worthful price
+		   </div>
+		   <div class="col-sm-1 col-xs-12 col-md-1 col-lg-1">
+		   </div>
+        </div>
+ </div>
+<div class="row">
+         <div class="sites">
+		 <h1 class="title1"> SITES</h1>
+		 <br>
+		 <center><text class="gtext" style="color:white;"> Choose the city from the following</text></center><br>
+         <div class="row">
+         <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3">
+		 </div>
+		 <div class="col-sm-6 col-xs-12 col-md-6 col-lg-6">
+		 <button class="btn info" style="border-radius:30px;" onclick="replace()">Madurai</button>
+		 <button class="btn info" style="border-radius:30px;" onclick="replace1()">Chennai</button>
+		 <button class="btn info" style="border-radius:30px;" onclick="replace2()">Coimbatore</button>
+		 <button class="btn info" style="border-radius:30px;" onclick="replace3()">Trichy</button>
+		 <button class="btn info" style="border-radius:30px;" onclick="replace4()">Tuticorin</button>
+		 
+		 
+		 </div> 
+		 <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3">
+		 </div>
+		 </div>
+<br>	 
+   <div id = "div1" style="display:block">
+   <div class="row">
+       <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+       </div>
+  <div class="column">
+    <img src="gallery2.jpg" id="1" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="ga.jpg"  id="2" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="gal.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+ 
+</div><br><br><br>
+<div class="row">
+ <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+ </div>
+  
+  <div class="column">
+    <img src="gallery4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="gallery6.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="gallery8.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+ 
+</div>
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="gallery1.jpg
+	  " style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="land1.jpg" style="width:100%" class="outline">
+	  </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="gallery9.jpg" style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="gallery3.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="gallery5.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="gallery7.jpg" style="width:100%"  class="outline">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo1" src="thumb.jpeg" onclick="currentSlide(1)">
+    </div>
+
+    <div class="column">
+      <img class="demo2" src="thumb1.jpg" onclick="currentSlide(2)">
+    </div>
+
+    <div class="column">
+      <img class="demo3" src="thumb2.jpg" onclick="currentSlide(3)">
+    </div>
+
+    <div class="column">
+      <img class="demo4" src="thumb3.jpg" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo5" src="thumb4.jpg" onclick="currentSlide(5)">
+   </div>
+   <div class="column">
+      <img class="demo6" src="thumb5.jpg" onclick="currentSlide(6)">
+   </div>
+  </div>
+</div>
+ </div> 
+<div id = "div2" style="display:none;">
+ <div class="row">
+       <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+       </div>
+  <div class="column">
+    <img src="sitegal.jpg" onclick="openModal1();currentSlide(7)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="sitegal1.jpg" onclick="openModal1();currentSlide(8)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="sitegal2.jpg" onclick="openModal1();currentSlide(9)" class="hover-shadow">
+  </div>
+ 
+</div><br><br><br>
+<div class="row">
+ <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+ </div>
+  
+  <div class="column">
+    <img src="sitegal3.jpg" onclick="openModal1();currentSlide(10)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="sitegal4.jpg" onclick="openModal1();currentSlide(11)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="sitegal5.jpg" onclick="openModal1();currentSlide(12)" class="hover-shadow">
+  </div>
+ 
+</div>
+<!-- The Modal/Lightbox -->
+<div id="myModal1" class="modal">
+  <span class="close cursor" onclick="closeModal1()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="sidemod.jpg
+	  " style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="sitemod1.jpg" style="width:100%" class="outline">
+	  </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="sitemod2.jpg" style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="sitemod3.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="sitemod4.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="sitemod5.jpg" style="width:100%"  class="outline">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo1" src="sitethumb.jpg" onclick="currentSlide(7)">
+    </div>
+
+    <div class="column">
+      <img class="demo2" src="sitethumb1.jpg" onclick="currentSlide(8)">
+    </div>
+
+    <div class="column">
+      <img class="demo3" src="sitethumb2.jpg" onclick="currentSlide(9)">
+    </div>
+
+    <div class="column">
+      <img class="demo4" src="sitethumb3.jpg" onclick="currentSlide(10)">
+    </div>
+    <div class="column">
+      <img class="demo5" src="sitethumb4.jpg" onclick="currentSlide(11)">
+   </div>
+   <div class="column">
+      <img class="demo6" src="sitethumb5.jpg" onclick="currentSlide(12)">
+   </div>
+  </div>
+</div>
+ </div>   
+ <div id = "div3" style="display:none;">
+ <div class="row">
+       <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+       </div>
+  <div class="column">
+    <img src="1gal.jpg" onclick="openModal2();currentSlide(13)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="2lag.jpg" onclick="openModal2();currentSlide(14)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="3gal.jpg" onclick="openModal2();currentSlide(15)" class="hover-shadow">
+  </div>
+ 
+</div><br><br><br>
+<div class="row">
+ <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+ </div>
+  
+  <div class="column">
+    <img src="4gal.jpg" onclick="openModal2();currentSlide(16)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="5gal.jpg" onclick="openModal2();currentSlide(17)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="6gal.jpg" onclick="openModal2();currentSlide(18)" class="hover-shadow">
+  </div>
+ 
+</div>
+<!-- The Modal/Lightbox -->
+<div id="myModal2" class="modal">
+  <span class="close cursor" onclick="closeModal2()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="1mod.jpg
+	  " style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="2mod.jpg" style="width:100%" class="outline">
+	  </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="3mod.jpg" style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="4mod.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="5mod.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="6mod.jpg" style="width:100%"  class="outline">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo1" src="1thumb.jpg" onclick="currentSlide(13)">
+    </div>
+
+    <div class="column">
+      <img class="demo2" src="2thumb.jpg" onclick="currentSlide(14)">
+    </div>
+
+    <div class="column">
+      <img class="demo3" src="3thumb.jpg" onclick="currentSlide(15)">
+    </div>
+
+    <div class="column">
+      <img class="demo4" src="4thumb.jpg" onclick="currentSlide(16)">
+    </div>
+    <div class="column">
+      <img class="demo5" src="5thumb.jpg" onclick="currentSlide(17)">
+   </div>
+   <div class="column">
+      <img class="demo6" src="6thumb.jpg" onclick="currentSlide(18)">
+   </div>
+  </div>
+</div>
+ </div>   
+ <div id = "div4" style="display:none;">
+ <div class="row">
+       <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+       </div>
+  <div class="column">
+    <img src="7gal.jpg" onclick="openModal3();currentSlide(19)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="8gal.jpg" onclick="openModal3();currentSlide(20)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="9gal.jpg" onclick="openModal3();currentSlide(21)" class="hover-shadow">
+  </div>
+ 
+</div><br><br><br>
+<div class="row">
+ <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+ </div>
+  
+  <div class="column">
+    <img src="10gal.jpg" onclick="openModal3();currentSlide(22)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="11gal.jpg" onclick="openModal3();currentSlide(23)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="12gal.jpg" onclick="openModal3();currentSlide(24)" class="hover-shadow">
+  </div>
+ 
+</div>
+<!-- The Modal/Lightbox -->
+<div id="myModal3" class="modal">
+  <span class="close cursor" onclick="closeModal3()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="7mod.jpg
+	  " style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="8mod.jpg" style="width:100%" class="outline">
+	  </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="9mod.jpg" style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="10mod.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="11mod.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="12mod.jpg" style="width:100%"  class="outline">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo1" src="7thumb.jpg" onclick="currentSlide(19)">
+    </div>
+
+    <div class="column">
+      <img class="demo2" src="8thumb.jpg" onclick="currentSlide(20)">
+    </div>
+
+    <div class="column">
+      <img class="demo3" src="9thumb.jpg" onclick="currentSlide(21)">
+    </div>
+
+    <div class="column">
+      <img class="demo4" src="10thumb.jpg" onclick="currentSlide(22)">
+    </div>
+    <div class="column">
+      <img class="demo5" src="11thumb.jpg" onclick="currentSlide(23)">
+   </div>
+   <div class="column">
+      <img class="demo6" src="12thumb.jpg" onclick="currentSlide(24)">
+   </div>
+  </div>
+</div>
+ </div> 
+<div id = "div5" style="display:none;">
+ <div class="row">
+       <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+       </div>
+  <div class="column">
+    <img src="13gal.jpg" onclick="openModal4();currentSlide(25)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="14gal.jpg" onclick="openModal4();currentSlide(26)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="15gal.jpg" onclick="openModal4();currentSlide(27)" class="hover-shadow">
+  </div>
+ 
+</div><br><br><br>
+<div class="row">
+ <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+ </div>
+  
+  <div class="column">
+    <img src="16gal.jpg" onclick="openModal4();currentSlide(28)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="17gal.jpg" onclick="openModal4();currentSlide(29)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="18gal.jpg" onclick="openModal4();currentSlide(30)" class="hover-shadow">
+  </div>
+ 
+</div>
+<!-- The Modal/Lightbox -->
+<div id="myModal4" class="modal">
+  <span class="close cursor" onclick="closeModal4()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="13mod.jpg
+	  " style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="14mod.jpg" style="width:100%" class="outline">
+	  </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="15mod.jpg" style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="16mod.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="17mod.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="18mod.jpg" style="width:100%"  class="outline">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo1" src="13thumb.jpg" onclick="currentSlide(25)">
+    </div>
+
+    <div class="column">
+      <img class="demo2" src="14thumb.jpg" onclick="currentSlide(26)">
+    </div>
+
+    <div class="column">
+      <img class="demo3" src="15thumb.jpg" onclick="currentSlide(27)">
+    </div>
+
+    <div class="column">
+      <img class="demo4" src="16thumb.jpg" onclick="currentSlide(28)">
+    </div>
+    <div class="column">
+      <img class="demo5" src="17thumb.jpg" onclick="currentSlide(29)">
+   </div>
+   <div class="column">
+      <img class="demo6" src="18thumb.jpg" onclick="currentSlide(30)">
+   </div>
+  </div>
+</div>
+ </div>
+ <div class="testi">
+   <div class="row">
+     <div id="testimonial-slider" class="owl-carousel">
+       <div class="testimonial">
+           <span class="icon fa fa-quote-left"></span>
+             <p class="description">
+               I Bought a land from RJ Real Estate company which is worthable for me according to my budget.I strongly recommend for those who buy lands at a lowest price with more benefits</p>
+             <div class="testimonial-content">
+			    <div class="pic">
+				<img src="modi1.jpg" class="img-circle">
+				</div>
+				<h3 class="heading">Aravind-</h3>
+				<span class="post">Software Developer</span>
+             </div>				
+		</div>
+		<div class="testimonial">
+           <span class="icon fa fa-quote-left"></span>
+             <p class="description">
+               I Bought a land from RJ Real Estate company which is worthable for me according to my budget.I strongly recommend for those who buy lands at a lowest price with more benefits</p>
+             <div class="testimonial-content">
+			    <div class="pic">
+				<img src="testiwoman.jpg">
+				</div>
+				<h3 class="heading">Aravind-</h3>
+				<span class="post">Software Developer</span>
+             </div>				
+		</div><div class="testimonial">
+           <span class="icon fa fa-quote-left"></span>
+             <p class="description">
+               I Bought a land from RJ Real Estate company which is worthable for me according to my budget.I strongly recommend for those who buy lands at a lowest price with more benefits</p>
+             <div class="testimonial-content">
+			    <div class="pic">
+				<img src="testiman1.jpg">
+				</div>
+				<h3 class="heading">Aravind-</h3>
+				<span class="post">Software Developer</span>
+             </div>				
+		</div>
+		<div class="testimonial">
+           <span class="icon fa fa-quote-left"></span>
+             <p class="description">
+               I Bought a land from RJ Real Estate company which is worthable for me according to my budget.I strongly recommend for those who buy lands at a lowest price with more benefits</p>
+             <div class="testimonial-content">
+			    <div class="pic">
+				<img src="testiman.jpg">
+				</div>
+				<h3 class="heading">Aravind-</h3>
+				<span class="post">Software Developer</span>
+             </div>				
+		</div>
+		<div class="testimonial">
+           <span class="icon fa fa-quote-left"></span>
+             <p class="description">
+               I Bought a land from RJ Real Estate company which is worthable for me according to my budget.I strongly recommend for those who buy lands at a lowest price with more benefits</p>
+             <div class="testimonial-content">
+			    <div class="pic">
+				<img src="testiman.jpg">
+				</div>
+				<h3 class="heading">Aravind-</h3>
+				<span class="post">Software Developer</span>
+             </div>				
+		</div>
+		<div class="testimonial">
+           <span class="icon fa fa-quote-left"></span>
+             <p class="description">
+               I Bought a land from RJ Real Estate company which is worthable for me according to my budget.I strongly recommend for those who buy lands at a lowest price with more benefits</p>
+             <div class="testimonial-content">
+			    <div class="pic">
+				<img src="testiman.jpg">
+				</div>
+				<h3 class="heading">Aravind-</h3>
+				<span class="post">Software Developer</span>
+             </div>				
+		</div>
+		
+    </div>		
+</div>	
+
+<script>
+$('html').css('overflow-x', 'initial');
+
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+function openModal1() {
+  document.getElementById("myModal1").style.display = "block";
+}
+
+// Close the Modal
+function closeModal1() {
+  document.getElementById("myModal1").style.display = "none";
+}
+function openModal2() {
+  document.getElementById("myModal2").style.display = "block";
+}
+
+// Close the Modal
+function closeModal2() {
+  document.getElementById("myModal2").style.display = "none";
+}
+function openModal3() {
+  document.getElementById("myModal3").style.display = "block";
+}
+
+// Close the Modal
+function closeModal3() {
+  document.getElementById("myModal3").style.display = "none";
+}
+function openModal4() {
+  document.getElementById("myModal4").style.display = "block";
+}
+
+// Close the Modal
+function closeModal4() {
+  document.getElementById("myModal4").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script><script>  
+function replace() {
+  document.getElementById("div1").style.display="block";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="none";
+}
+function replace1() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="block";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="none";
+}
+function replace2() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="block";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="none";
+}
+function replace3() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="block";
+  document.getElementById("div5").style.display="none";
+}
+function replace4() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="block";
+}
+</script>
+ <script>
+  //$(document).ready(function() { // better to use 
+  //  $('.List li').on('click touchstart', function() {
+   //     $('.button').slideDown('500');
+    });
+});</script>
+<script>
+$(document).ready(function() {
+   $("#myCarousel").swiperight(function() {
+      $(this).carousel('prev');
+    });
+   $("#myCarousel").swipeleft(function() {
+      $(this).carousel('next');
+   });
+});
+</script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"</script>
+
+<script>
+ $(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+	items:3,
+	itemsDesktop:[1000,3],
+	itemsDesktopSmall:[979,2],
+	itemsTablet:[768,2],
+	itemsMobile:[650,1],
+	pagination:true,
+	autoPlay:true
+	})
+	});
+	</script>
+</body>
+</html>

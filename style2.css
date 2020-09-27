@@ -1,0 +1,130 @@
+*{
+   box-sizing: border-box;
+}
+body{
+  margin:0;
+  font-family:'Times New Roman';
+}
+.nav{
+   width: 100%;
+   height: 70px;
+   background-color:#000000;
+   position:relative;
+  
+}
+.nav .nav_header{
+ display: inline-block;
+}
+.nav .nav_btn{
+ display: none;
+}
+.nav .nav_links{
+ display: inline;
+ float: right;
+ font-size: 14px;
+}
+.nav .nav_links a{
+ display: inline-block;
+ padding: 24px 24px;
+ text-decoration: none;
+ color:  #f2f2f2;
+ text-align: center;
+}
+.nav .nav_links a:hover{
+ background-color:#9932CC;
+ color: #fff;
+}
+.nav #nav_check{
+ display: none
+ }
+#carouselExampleIndicators
+{
+	position:relative;
+	z-index: -1;
+	
+}	
+.carousel-caption {
+width:250px;
+z-index:10;
+color:#fff;
+text-align:center;
+top:50%;
+left:65%;
+bottom:auto;
+-webkit-transform:translate(0, -50%);
+-ms-transform:translate(0, -50%);
+transform:translate(0, -50%);
+}
+
+@media  (max-width: 767px){
+
+ .nav .nav_btn{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right:0;
+ }
+ .nav .nav_btn label{
+  display:inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 26px 26px;
+}
+
+
+.nav .nav_btn label span{
+  display: block;
+  width: 25px;
+  height: 10px;
+  border-top: 2px solid #f2f2f2;
+}
+.nav .nav_links{
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color:#000000;
+  height: 0px;
+  transition: 0.3s all ease-in-out;
+  overflow-y:hidden;
+  top:70px;
+  left:0;
+ 
+}
+.nav .nav_links a{
+  position: relative;
+  display: block;
+  width:100%;
+  text-align: center;
+ 
+  
+ }
+.nav #nav_check:not(:checked) + .nav_links{
+  height: 0px;
+  
+}
+.nav #nav_check:checked + .nav_links{
+  height: 52vh;
+  overflow-y: hidden;
+  
+  
+}
+.myCarousel
+{
+	position:absolute;
+	cursor: pointer;
+
+	
+}	
+.carousel-inner > .item > img {
+    margin:  auto;
+    padding-top: 50px;
+    text-align:center;
+	
+	
+	
+}
+
+
+}
+
+

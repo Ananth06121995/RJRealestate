@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, "/>
+    <meta charset="UTF-8">
+	<title>Responsuive Sliding Menu</title>
+	<link rel="stylesheet" type="text/css" href="aos.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://zeptojs.com/zepto.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/assets/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!--Bootstrap-->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+	
+	html, body{
+	 max-width: 100%;
+    overflow-x: hidden;
+	}
+	.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 120px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  position:relative;
+  padding:12px 16px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;padding:5px 5px 5px 5px; width:149px;margin-left:0px;margin-right:0px;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  position:absolute;
+  
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #4169E1;
+  padding: 24px 25px;
+   position: relative;
+}
+	.vision{
+	background: url(vision.jpg);
+	 background-size:cover;
+	 height:761px;
+	 }
+	 .ic{
+     font-size:18px;
+	 }
+	 .proce{
+	 margin-top:140px;
+	 margin-left:450px;
+	 border:10px solid black;
+	 }
+	 .vis{
+	 margin-left:420px;
+	 margin-top:400px;
+	 
+	 }
+			.foot{
+         width: 100%;
+         height: 70px;
+         background-color:#000000;  
+		 }	
+            .mobm{
+         margin-top:23px;
+                 }		
+.scrolltop {
+	display:none;
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	bottom:20px;
+	right:10px;	
+}
+.scroll {
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	background:#1E90FF;
+	padding:20px;
+	text-align: center;
+	margin: 0 0 0 0;
+	cursor:pointer;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover {
+	background:#5178d9;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover .fa {
+	padding-top:-10px;
+}
+.scroll .fa {
+    color:#fff;
+	font-size:30px;
+	margin-top:-5px;
+	margin-left:1px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}		
+
+	@media  (max-width: 767px){
+	
+	.nav{
+   width: 103%;
+   }
+   .image{
+    width:200px;
+	height:60px;
+	}
+	   .myCarousel
+{
+	position: fixed;
+	cursor: pointer;
+
+	
+}	
+.carousel-inner > .item > img {
+    margin:  auto;
+    padding-top: 70px;
+    text-align: center;
+	width: 105%;
+	
+	}
+
+	  .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+	  
+      }
+	  .text{
+	  width: 150px;
+	  font-size: 20px;
+	  color:#fff;
+	 
+	  }
+	   .text1{
+	  width: 150px;
+	  font-size: 20px;
+	  color:#fff;
+	  }
+	  .text2{
+	  width: 150px;
+	  font-size: 20px;
+	  color: #FBF4B5;
+	  }
+	  .button {
+      background-color: #9932CC; ; /* Green */
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: auto;
+	  position: absolute;
+	  }
+	  .button1
+	  {
+	   left:23%;
+	   cursor: auto;
+	  }
+       .button2 {
+      background-color: #b3c6ff;  /* Green */
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+	  position:absolute;
+	  
+}
+	  .button3 {border-radius: 42px;
+	  left: 23%;
+	  text-decoration: none;
+	  }
+	   a:hover { 
+            text-decoration: none;
+			color: #fff;
+	
+			}
+	  .button2:hover
+	  {
+	  background-color:#809fff;
+	  }
+	   .button4 {
+      background-color: #994d00;  /* Green */
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+	  position:absolute;
+	  
+}
+	  .button5 {border-radius: 42px;
+	  left: 28%;
+	  text-decoration: none;
+	  }
+	   a:hover { 
+            text-decoration: none;
+			color: #fff;
+	
+			}
+	  .button4:hover
+	  {
+	  background-color: #4d2600;
+	  }
+.about-us {
+	margin-top: 500px;
+	background-image:url('about us2.jpg');
+	 max-width: 100%;
+	overflow-x: hidden;
+   	
+	
+	}
+	.mod
+  {
+    margin-top: -10px;
+	height: 150px;
+	width: 150px;
+	margin-left:100px;
+	}
+	 .word{
+    margin-top: -10px;
+	color: white;
+	font-size: 15px;
+	margin-left: 10px;
+	}
+	.title{
+    font-size:20px;
+	margin-left: 153px;
+	}
+   .sites{
+	height: 550px;
+	margin-top: 500px;
+	background-image:url('sites.jpg');
+	bakground-image: no repeat;
+    }
+	.title1{
+	   font-size:20px;
+	   margin-left: 160px;
+	   }
+	 .gtext{
+	 font-size: 15px;
+	 }
+	 .btn {
+     border: 2px solid black;
+     background-color: white;
+     color: black;
+     padding: 7px 14px;
+     font-size: 16px;
+     cursor: pointer;
+	 }
+	 .btn info {
+	 margin-left: 150px;
+	 
+	 }
+	 .info {
+     border-color: #2196F3;
+     color: dodgerblue
+          }
+
+     .info:hover {
+      background: #2196F3;
+      color: white;
+          }
+	.btn info {
+	 margin-left: 250px;
+	 }
+	.row > .column {
+  padding-right: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo1 {
+  opacity: 0.6;
+  margin-left: 400px;
+}
+.demo2 {
+  opacity: 0.6;
+  margin-left: 200px;
+}
+.demo3 {
+  opacity: 0.6;
+  margin-left: 0px;
+}
+.demo4 {
+  opacity: 0.6;
+  margin-left: -200px;
+}
+.demo5{
+ opacity: 0.6;
+ margin-top: -50px;
+ margin-left: 800px;
+ }
+ .demo6{
+ opacity: 0.6;
+ margin-top: -50px;
+ margin-left: 900px;
+ }
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+  border: 4px solid black;
+  height: 100px;
+  width: 100px;
+  margin-left:50px;
+  
+}
+#2{
+  padding-left: 5px;
+  }
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.outline{
+  border:4px solid white;
+  }
+  .testi{
+   height: 600px;
+   }
+  .testimonial{
+   background: white;
+   text-align: center;
+   margin-left: 30px;
+   margin-right: 30px;
+   position: relative;
+   margin-top:70px;
+   
+   }
+   .testimonial:before,
+   .testimonial:after{
+    content: "";
+	border-top: 40px solid white;
+	border-right: 125px solid transparent;
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	}
+	.testimonial:after{
+	 border-right:none;
+	 border-left: 125px solid transparent;
+	 left: auto;
+	 right: 0;
+	 }
+	 .owl-theme .owl-controls{
+	  margin-top:20px;
+	  }
+	 .contact{  
+	 margin-top:300px; 
+     background: url(dup4m.jpg);
+	 background-repeat: no-repeat;
+     overflow: hidden;
+	 height: 500px;
+	 }
+	 .form{
+	  width: 250px;
+	  background: #000000;
+	  padding: 50px;
+	  margin: 100px auto;
+	  border-radius: 30px;
+	  position: relative;
+	  margin-top:-5px;
+	  height: 400px;
+	  
+	  }
+	  .form-items{
+	  width: 100%;
+	  }
+	  .form-items .input{
+	  width: 130%;
+	  margin-bottom: 12px;
+	  padding: 15px 40px;
+	  box-sizing: border-box;
+	  background: #ebeef1;
+	  border: 0;
+	  outline: none;
+	  border-radius: 30px;
+	  margin-left:-20px;
+	  }
+	  .form-items .input.message{
+	  height: 125px;
+	  border-radius: 15px;
+	  margin-bottom: 30px;
+	  padding: 15px;
+	  background: #ebeef1;
+	  resize: none;
+	  }
+	  .butn{
+	  background:#4169E1;
+	  text-align: center;
+	  color: #fff;
+	  padding:12px;
+	  border-radius:25px;
+	  cursor:pointer;
+	  width: 200px;
+	  margin-right:-49px;
+	  margin-left:-20px;
+	  margin-top: -20px;
+	  }
+	  .butn .fas{
+	  margin-left:10px;
+	  font-size: 12px;
+	  }
+	  .form-items{
+	  position: relative;
+	  }
+	  
+	  .form-items .fas{
+	  position: absolute;
+	  top: 15px;
+	  left: 2px;
+	  }
+	  .social-icons{
+	  position: absolute;
+	  bottom: -25px;
+	  left: 50%;
+	  transform: translateX(-50%);
+	  width: 200px;
+	  display: flex;
+	  justify-content: space-around;
+	  }
+	  .social-icons div{
+	  width: 50px;
+	  height: 50px;
+	  border-radius: 50%;
+	  position: relative;
+	  cursor: pointer;
+	  }
+	   .social-icons div .fab{
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+	  color: #fff;
+	  }
+	  .social-icons div.facebook{
+	  background:#5178d9;
+	  }
+	  .social-icons div.twitter{
+	  background:#41caf6;
+	  }
+	  .social-icons div.google{
+	  background:#FF0000;
+	  }
+	  .column1 {
+       float: left;
+       width: 40%;
+	   border: 2px solid black;
+	   height: 250px;
+	   width:200px
+	   }
+	   .mappu{
+	   height:250px;
+	   width:200px;
+	   }
+	 .column2{
+       background-color: #d7dbdd;
+	   height: 250px;
+	   }
+	   
+	   
+	</style>
+</head>
+<body>
+<audio controls autoplay loop style="display:none;">
+        <source src="peaceful.mp3" type="audio/mpeg"/>
+		</audio>  
+
+
+<div class='thetop'></div>
+	<div data-aos="fade-down" id="navbar" class="nav" style="position:fixed;z-index: 5;width: 100%;">
+		<div class="nav_header">
+			<div class="nav_title">
+            <img src="Real.png" class="image"/>
+            </div>
+        </div>
+        <div class="nav_btn" id="home">
+            <label for="nav_check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <input type="checkbox" name="" id="nav_check">
+        <div class="nav_links" style="font-family:Times New Roman;z-index: 5;">
+            <a href="index.html">HOME</a>
+            <a href="index.html#about-us">ABOUT US</a>
+            <a href="index.html#sites">SITES</a>
+           <div class="dropdown"style="color:white;">
+             <button class="dropbtn">DOCUMENTS
+			 <i class="fa fa-caret-down"></i></button>
+             <div class="dropdown-content">
+                   <a href="#sight.html" class="context">Sight Features</a>
+                   <a href="#" class="context">Vision</a>
+                   <a href="mission.html" class="context">Mission</a>
+             </div>
+             </div> 
+            <a href="index.html#testimonials">TESTIMONIALS</a>
+            <a href="index.html#contactus">CONTACT</a>
+        </div>
+	</div>
+<div class="vision">
+
+    <img  data-aos="fade-up" src="vision1.jpg" class="proce"></img>
+	<h1  data-aos="fade-up" style="color:black;margin-left:630px;margin-top:-380px;font-family:times new roman;">VISION</h1>
+	<p data-aos="fade-up" class="vis"><i class="fas fa-angle-double-right ic">The satisfaction of our customers is the main priority of RJ Real Estate.<br>&nbsp;&nbsp;&nbsp;&nbsp;and to reach our standard to make our service to be function in allover India.<br></i><br><br><i class="fas fa-angle-double-right ic">Along with providing accurate and up-to-date information, skilled analysis <br>&nbsp;&nbsp;&nbsp;&nbsp;and sound real estate advice and to continually explore. new ideas and technology,<br>&nbsp;&nbsp;&nbsp;&nbsp;to make the selling and buying of real estate faster, less costly, and easier.</i><br><br><i class="fas fa-angle-double-right ic">To be the real estate team of choice for buyers, sellers, Realtors, and highly talented<br>&nbsp;&nbsp;&nbsp;&nbsp;professionals who value relationships over transactions, superior work, and community impact.</i></p>
+<div class="row" style="width:100%; height:1px; border:2px solid #4169E1;">
+</div>    
+<div id="footer" class="foot"style="color:white;">
+
+<div class="row">
+<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6 mobm"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Copyrights ©2020.RJ REAL <span style="color:#4169E1;">ESTATE</span> - All Rights Reserved</div>
+<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4"></div>
+<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 mobm">Designed by </div>
+</div>
+</div>
+
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+	
+<script src="https://cdnjs.cloudfare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="aos.js"></script>
+<script>
+AOS.init({
+  duration: 2000,
+  });
+</script> 
+<script>
+function refreshPage(){
+    window.location.reload();
+} 
+</script>
+<script>
+
+$(document).ready(function(){
+    $( "a.scrollLink" ).click(function( event ) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 1000);
+    });
+});
+</script>
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 50 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
+$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top}, 1400);return false})})
+</script>
+<script>
+$('html').css('overflow-x', 'initial');
+
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+function openModal1() {
+  document.getElementById("myModal1").style.display = "block";
+}
+
+// Close the Modal
+function closeModal1() {
+  document.getElementById("myModal1").style.display = "none";
+}
+function openModal2() {
+  document.getElementById("myModal2").style.display = "block";
+}
+
+// Close the Modal
+function closeModal2() {
+  document.getElementById("myModal2").style.display = "none";
+}
+function openModal3() {
+  document.getElementById("myModal3").style.display = "block";
+}
+
+// Close the Modal
+function closeModal3() {
+  document.getElementById("myModal3").style.display = "none";
+}
+function openModal4() {
+  document.getElementById("myModal4").style.display = "block";
+}
+
+// Close the Modal
+function closeModal4() {
+  document.getElementById("myModal4").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script><script>  
+function replace() {
+  document.getElementById("div1").style.display="block";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="none";
+}
+function replace1() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="block";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="none";
+}
+function replace2() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="block";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="none";
+}
+function replace3() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="block";
+  document.getElementById("div5").style.display="none";
+}
+function replace4() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="block";
+}
+</script>
+ <script>
+  //$(document).ready(function() { // better to use 
+  //  $('.List li').on('click touchstart', function() {
+   //     $('.button').slideDown('500');
+    });
+});</script>
+<script>
+$(document).ready(function() {
+   $("#myCarousel").swiperight(function() {
+      $(this).carousel('prev');
+    });
+   $("#myCarousel").swipeleft(function() {
+      $(this).carousel('next');
+   });
+});
+</script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+<script>
+ $(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+	items:3,
+	itemsDesktop:[1000,3],
+	itemsDesktopSmall:[979,2],
+	itemsTablet:[768,2],
+	itemsMobile:[650,1],
+	pagination:true,
+	autoPlay:true
+	})
+	});
+	</script>
+</body>
+</html>

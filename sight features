@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, "/>
+    <meta charset="UTF-8">
+	<title>Responsuive Sliding Menu</title>
+	<link rel="stylesheet" type="text/css" href="aos.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://zeptojs.com/zepto.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/assets/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!--Bootstrap-->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+	
+	html, body{
+	 max-width: 100%;
+    overflow-x: hidden;
+	}
+	
+	.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 120px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  position:relative;
+  padding:12px 16px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;padding:5px 5px 5px 5px; width:149px;margin-left:0px;margin-right:0px;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  position:absolute;
+  
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #4169E1;
+  padding: 24px 25px;
+   position: relative;
+}
+	
+	.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+	.documents {
+	 background: url(ti.jpg);
+	 background-size:cover;
+	 height:4700px;
+	
+
+	 
+	 }
+     
+	 .card{
+	 width:250px;
+	 height:370px;
+	 
+	 }
+	 .mid{
+	 margin-left:75px;
+	 }
+	 .card-body{
+	 margin-left:8px;
+	 }
+	
+	  .contact {
+	   
+	  margin-top:500px; 
+     background: url(dup4.jpg);
+     background-size: cover;
+	 height: 670px;
+     overflow: hidden;
+	  }
+	  .contact-form{
+	  width: 350px;
+	  background: #000000;
+	  padding: 50px;
+	  margin: 100px auto;
+	  border-radius: 30px;
+	  position: relative;
+	  }
+	  .form-items{
+	  width: 100%;
+	  }
+	  .form-items .input{
+	  width: 100%;
+	  margin-bottom: 12px;
+	  padding: 15px 40px;
+	  box-sizing: border-box;
+	  background: #ebeef1;
+	  border: 0;
+	  outline: none;
+	  border-radius: 30px;
+	  }
+	  .form-items .input.message{
+	  height: 125px;
+	  border-radius: 15px;
+	  margin-bottom: 30px;
+	  padding: 15px;
+	  background: #ebeef1;
+	  resize: none;
+	  }
+	  .submit{
+	  background:#4169E1;
+	  text-align: center;
+	  color: #fff;
+	  padding:12px;
+	  border-radius:25px;
+	  cursor:pointer;
+	  width: 250px;
+	  }
+	  .submit .fas{
+	  margin-left: 10px;
+	  font-size: 12px;
+	  }
+	  .form-items{
+	  position: relative;
+	  }
+	  
+	  .form-items .fas{
+	  position: absolute;
+	  top: 15px;
+	  left: 15px;
+	  }
+	  .social-icons{
+	  position: absolute;
+	  bottom: -25px;
+	  left: 50%;
+	  transform: translateX(-50%);
+	  width: 200px;
+	  display: flex;
+	  justify-content: space-around;
+	  }
+	  .social-icons div{
+	  width: 50px;
+	  height: 50px;
+	  border-radius: 50%;
+	  position: relative;
+	  cursor: pointer;
+	  }
+	   .social-icons div .fab{
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+	  color: #fff;
+	  }
+	  .social-icons div.facebook{
+	  background:#5178d9;
+	  }
+	  .social-icons div.twitter{
+	  background:#41caf6;
+	  }
+	  .social-icons div.google{
+	  background:#FF0000;
+	  }
+	  .column1 {
+       float: left;
+       width: 50%;
+	   border: 2px solid black;
+	   height: 400px;
+             }
+	   .mappu{
+	   height: 400px;
+	   width:700px;
+	   }
+		.column2{
+       background-color: #d7dbdd;
+	   height: 400px;
+	   }
+		.map{
+		font-size: 50px;
+		margin-left: 780px;
+		}
+		.notif{
+		font-size: 14px;
+		margin-left:-10px;
+		}
+        .spun{
+		margin-top:-5px;
+		margin-left:-10px;
+		}
+		.phone{
+		margin-top:-145px;
+		margin-left:1250px;
+		font-size: 50px;
+		}
+		.notif1{
+		font-size: 14px;
+		margin-left: -20px;
+		margin-bottom: 500px;
+		}
+		.mail{
+		font size: 50px;
+		margin-left:-200px;
+		}
+		.notif2{
+		font-size: 14px;
+		margin-left:-30px;
+		margin-bottom: -370px;
+		}
+		.spun1{
+		margin-left: -20px;
+		margin-top: -10px;
+		}
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+             }
+			.foot{
+         width: 100%;
+         height: 70px;
+         background-color:#000000;  
+		 }	
+            .mobm{
+         margin-top:23px;
+                 }		
+.scrolltop {
+	display:none;
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	bottom:20px;
+	right:10px;	
+}
+.scroll {
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	background:#1E90FF;
+	padding:20px;
+	text-align: center;
+	margin: 0 0 0 0;
+	cursor:pointer;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover {
+	background:#5178d9;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover .fa {
+	padding-top:-10px;
+}
+.scroll .fa {
+    color:#fff;
+	font-size:30px;
+	margin-top:-5px;
+	margin-left:1px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}		
+
+	@media  (max-width: 767px){
+	
+	.nav{
+   width: 103%;
+   }
+   .image{
+    width:200px;
+	height:60px;
+	}
+	   .myCarousel
+{
+	position: fixed;
+	cursor: pointer;
+
+	
+}	
+.carousel-inner > .item > img {
+    margin:  auto;
+    padding-top: 70px;
+    text-align: center;
+	width: 105%;
+	
+	}
+
+	  .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+	  
+      }
+	  .text{
+	  width: 150px;
+	  font-size: 20px;
+	  color:#fff;
+	 
+	  }
+	   .text1{
+	  width: 150px;
+	  font-size: 20px;
+	  color:#fff;
+	  }
+	  .text2{
+	  width: 150px;
+	  font-size: 20px;
+	  color: #FBF4B5;
+	  }
+	  .button {
+      background-color: #9932CC; ; /* Green */
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: auto;
+	  position: absolute;
+	  }
+	  .button1
+	  {
+	   left:23%;
+	   cursor: auto;
+	  }
+       .button2 {
+      background-color: #b3c6ff;  /* Green */
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+	  position:absolute;
+	  
+}
+	  .button3 {border-radius: 42px;
+	  left: 23%;
+	  text-decoration: none;
+	  }
+	   a:hover { 
+            text-decoration: none;
+			color: #fff;
+	
+			}
+	  .button2:hover
+	  {
+	  background-color:#809fff;
+	  }
+	   .button4 {
+      background-color: #994d00;  /* Green */
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+	  position:absolute;
+	  
+}
+	  .button5 {border-radius: 42px;
+	  left: 28%;
+	  text-decoration: none;
+	  }
+	   a:hover { 
+            text-decoration: none;
+			color: #fff;
+	
+			}
+	  .button4:hover
+	  {
+	  background-color: #4d2600;
+	  }
+.about-us {
+	margin-top: 500px;
+	background-image:url('about us2.jpg');
+	 max-width: 100%;
+	overflow-x: hidden;
+   	
+	
+	}
+	.mod
+  {
+    margin-top: -10px;
+	height: 150px;
+	width: 150px;
+	margin-left:100px;
+	}
+	 .word{
+    margin-top: -10px;
+	color: white;
+	font-size: 15px;
+	margin-left: 10px;
+	}
+	.title{
+    font-size:20px;
+	margin-left: 153px;
+	}
+   .sites{
+	height: 550px;
+	margin-top: 500px;
+	background-image:url('sites.jpg');
+	bakground-image: no repeat;
+    }
+	.title1{
+	   font-size:20px;
+	   margin-left: 160px;
+	   }
+	 .gtext{
+	 font-size: 15px;
+	 }
+	 .btn {
+     border: 2px solid black;
+     background-color: white;
+     color: black;
+     padding: 7px 14px;
+     font-size: 16px;
+     cursor: pointer;
+	 }
+	 .btn info {
+	 margin-left: 150px;
+	 
+	 }
+	 .info {
+     border-color: #2196F3;
+     color: dodgerblue
+          }
+
+     .info:hover {
+      background: #2196F3;
+      color: white;
+          }
+	.btn info {
+	 margin-left: 250px;
+	 }
+	.row > .column {
+  padding-right: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo1 {
+  opacity: 0.6;
+  margin-left: 400px;
+}
+.demo2 {
+  opacity: 0.6;
+  margin-left: 200px;
+}
+.demo3 {
+  opacity: 0.6;
+  margin-left: 0px;
+}
+.demo4 {
+  opacity: 0.6;
+  margin-left: -200px;
+}
+.demo5{
+ opacity: 0.6;
+ margin-top: -50px;
+ margin-left: 800px;
+ }
+ .demo6{
+ opacity: 0.6;
+ margin-top: -50px;
+ margin-left: 900px;
+ }
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+  border: 4px solid black;
+  height: 100px;
+  width: 100px;
+  margin-left:50px;
+  
+}
+#2{
+  padding-left: 5px;
+  }
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.outline{
+  border:4px solid white;
+  }
+  .testi{
+   height: 600px;
+   }
+  .testimonial{
+   background: white;
+   text-align: center;
+   margin-left: 30px;
+   margin-right: 30px;
+   position: relative;
+   margin-top:70px;
+   
+   }
+   .testimonial:before,
+   .testimonial:after{
+    content: "";
+	border-top: 40px solid white;
+	border-right: 125px solid transparent;
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	}
+	.testimonial:after{
+	 border-right:none;
+	 border-left: 125px solid transparent;
+	 left: auto;
+	 right: 0;
+	 }
+	 .owl-theme .owl-controls{
+	  margin-top:20px;
+	  }
+	 .contact{  
+	 margin-top:300px; 
+     background: url(dup4m.jpg);
+	 background-repeat: no-repeat;
+     overflow: hidden;
+	 height: 500px;
+	 }
+	 .form{
+	  width: 250px;
+	  background: #000000;
+	  padding: 50px;
+	  margin: 100px auto;
+	  border-radius: 30px;
+	  position: relative;
+	  margin-top:-5px;
+	  height: 400px;
+	  
+	  }
+	  .form-items{
+	  width: 100%;
+	  }
+	  .form-items .input{
+	  width: 130%;
+	  margin-bottom: 12px;
+	  padding: 15px 40px;
+	  box-sizing: border-box;
+	  background: #ebeef1;
+	  border: 0;
+	  outline: none;
+	  border-radius: 30px;
+	  margin-left:-20px;
+	  }
+	  .form-items .input.message{
+	  height: 125px;
+	  border-radius: 15px;
+	  margin-bottom: 30px;
+	  padding: 15px;
+	  background: #ebeef1;
+	  resize: none;
+	  }
+	  .butn{
+	  background:#4169E1;
+	  text-align: center;
+	  color: #fff;
+	  padding:12px;
+	  border-radius:25px;
+	  cursor:pointer;
+	  width: 200px;
+	  margin-right:-49px;
+	  margin-left:-20px;
+	  margin-top: -20px;
+	  }
+	  .butn .fas{
+	  margin-left:10px;
+	  font-size: 12px;
+	  }
+	  .form-items{
+	  position: relative;
+	  }
+	  
+	  .form-items .fas{
+	  position: absolute;
+	  top: 15px;
+	  left: 2px;
+	  }
+	  .social-icons{
+	  position: absolute;
+	  bottom: -25px;
+	  left: 50%;
+	  transform: translateX(-50%);
+	  width: 200px;
+	  display: flex;
+	  justify-content: space-around;
+	  }
+	  .social-icons div{
+	  width: 50px;
+	  height: 50px;
+	  border-radius: 50%;
+	  position: relative;
+	  cursor: pointer;
+	  }
+	   .social-icons div .fab{
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+	  color: #fff;
+	  }
+	  .social-icons div.facebook{
+	  background:#5178d9;
+	  }
+	  .social-icons div.twitter{
+	  background:#41caf6;
+	  }
+	  .social-icons div.google{
+	  background:#FF0000;
+	  }
+	  .column1 {
+       float: left;
+       width: 40%;
+	   border: 2px solid black;
+	   height: 250px;
+	   width:200px
+	   }
+	   .mappu{
+	   height:250px;
+	   width:200px;
+	   }
+	 .column2{
+       background-color: #d7dbdd;
+	   height: 250px;
+	   }
+	   
+	   
+	</style>
+</head>
+<body>
+<audio controls autoplay loop style="display:none;">
+        <source src="peaceful.mp3" type="audio/mpeg"/>
+		</audio>  
+
+
+<div class='thetop'></div>
+	<div data-aos="fade-down" id="navbar" class="nav" style="position:fixed;z-index: 5;width: 100%;">
+		<div class="nav_header">
+			<div class="nav_title">
+            <img src="Real.png" class="image"/>
+            </div>
+        </div>
+        <div class="nav_btn" id="home">
+            <label for="nav_check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <input type="checkbox" name="" id="nav_check">
+        <div class="nav_links" style="font-family:Times New Roman;z-index: 5;">
+            <a href="#home" class="scrollLink">HOME</a>
+            <a href="#about-us " class="scrollLink">ABOUT US</a>
+            <a href="#sites" class="scrollLink">SITES</a>
+             <div class="dropdown"style="color:white;">
+             <button class="dropbtn">DOCUMENTS
+			 <i class="fa fa-caret-down"></i></button>
+             <div class="dropdown-content">
+                   <a href="#" class="context">Sight Features</a>
+                   <a href="vision.html" class="context">Vision</a>
+                   <a href="mission.html" class="context">Mission</a>
+             </div>
+             </div> 
+            <a href="#testimonials" class="scrollLink">TESTIMONIALS</a>
+            <a href="#contactus" class="scrollLink">CONTACT</a>
+        </div>
+	</div>
+	<div class="documents" style="width:100%;">
+	<br><br><br><br>
+	   
+	<div  data-aos="fade-up"class="row">
+	    
+		 <h1 data-aos="fade-down" style="color:white;"><center>MADURAI</center></h1>
+		 <br><br>
+		 <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+		 </div>
+		 <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="gallery2til.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">KP nagar</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is located at interior of madurai with 1500sq.ft.There are various facilities available...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 mid">
+		  <div class="card" style="background-color:white;">
+		  <img src="gatil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Bharat nagar</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is located at outer of madurai with 1400sq.ft.There are various facilities available...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal1">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2">
+		  <div class="card" style="background-color:white;">
+		  <img src="galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">RK plots</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is located at ring road of madurai with 2500sq.ft.There are various facilities available...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal2">More</a>
+		   </div>
+		</div>
+	</div>
+	</div>
+	<br><br>
+	<div  data-aos="fade-up"class="row">
+	   <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+		 </div>
+		 <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="gallery4til.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Suriya vaccants</h4>
+			  <p class="card-text" style="background-color:white;">
+			   One of the residential plots of madurai with 3000sq.ft.There are numerous features exists...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal3">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 mid">
+		  <div class="card" style="background-color:white;">
+		  <img src="gallery6til.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">PR Groups plots </h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is situated at mid of madurai with 2000sq.ft.There are various facilities available...</p>
+		     <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal4">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="gallery8til.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Rooba estates</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is located at entry of madurai with 2500sq.ft.There are various facilities available...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal5">More</a>
+		   </div>
+		</div>
+	</div>
+	</div>
+	<br>
+	<h1 data-aos="fade-down" style="color:white;"><center>CHENNAI</center></h1>
+	<br><br>
+	<div  data-aos="fade-up"class="row">
+	<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+		 </div>
+		 <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="sitegaltil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Royal city</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is located at interior of chennai with 500sq.ft.There are various facilities available...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal6">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 mid">
+		  <div class="card" style="background-color:white;">
+		  <img src="sitegal1til.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Rp lands</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is located at outer of chennai with 1600sq.ft.There are various facilities available...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal7">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="sitegal2til.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Rj Grounds</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is located at near chengalpat in chennai with 2500sq.ft.The features of lands are...</p>
+		     <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal8">More</a>
+		   </div>
+		</div>
+	</div>
+	</div>
+	<br><br>
+	<div  data-aos="fade-up" class="row">
+	   <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+		 </div>
+		 <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="sitegal3til.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Blessy plots</h4>
+			  <p class="card-text" style="background-color:white;">
+			   One of the residential plots of chennai with 1000sq.ft.There are numerous features exists...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal9">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 mid">
+		  <div class="card" style="background-color:white;">
+		  <img src="sitegal4til.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Ranjit hectares</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is situated at west of chennai with 2000sq.ft.There are various facilities available...</p>
+		     <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal10">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="sitegal5til.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Restro farms</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is located at entry of chennai with 1600sq.ft.There are various facilities available...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal11">More</a>
+		   </div>
+		</div>
+	</div>
+	</div>
+	<br>
+	<h1 data-aos="fade-down"style="color:white;"><center>COIMBATORE</center></h1>
+	<br><br>
+	<div data-aos="fade-up" class="row">
+	<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+		 </div>
+		 <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="1galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Lakshman Compounds</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is Placed at heart of coimbatore with 900sq.ft.There are various facilities available...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal12">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 mid">
+		  <div class="card" style="background-color:white;">
+		  <img src="2lagtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Dhruv arch</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is located at outer of coimbatore with 1800sq.ft.There facilities available are as...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal13">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="3galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Rosy Borders</h4>
+			  <p class="card-text" style="background-color:white;">
+			    The Rosy borders is situated at near Fun mall in coimbatore with 1950sq.ft.The features of lands are...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal14">More</a>
+		   </div>
+		</div>
+	</div>
+	</div>
+	<br><br>
+	<div  data-aos="fade-up"class="row">
+	   <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+		 </div>
+		 <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="4galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Sai lands</h4>
+			  <p class="card-text" style="background-color:white;">
+			   One of the residential plots of coimbatore with 1000sq.ft.There are numerous features exists...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal15">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 mid">
+		  <div class="card" style="background-color:white;">
+		  <img src="5galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Noor plots</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is situated at west of coimbatore with 2000sq.ft.The available facilities are tremendous...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal16">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="6galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">velliangiri base</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is positioned at foothills of velliangiri in coimbatore with 3600sq.ft.There are various facilities available...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal17">More</a>
+		   </div>
+		</div>
+	</div>
+	</div>
+	<br>
+	<h1 data-aos="fade-down"style="color:white;"><center>TRICHY</center></h1>
+	<br><br>
+	<div data-aos="fade-up"class="row">
+	<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+		 </div>
+		 <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="7galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">siva circle</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is located at east of trichy with 3500sq.ft.There are various facilities available...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal18">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 mid">
+		  <div class="card" style="background-color:white;">
+		  <img src="8galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Rx square</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is located at west of trichy with 3700sq.ft.There are various facilities available...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal19">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="9galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">ashwin promo</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is located at north of trichy with 2800sq.ft.The features of lands are...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal20">More</a>
+		   </div>
+		</div>
+	</div>
+	</div>
+	<br><br>
+	<div data-aos="fade-up" class="row">
+	   <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+		 </div>
+		 <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="10galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Bhuvi farms</h4>
+			  <p class="card-text" style="background-color:white;">
+			   One of the residential plots in trichy  with 1000sq.ft.There are numerous features exists...</p>
+		     <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal21">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 mid">
+		  <div class="card" style="background-color:white;">
+		  <img src="11galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Raksha base</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is situated at south of trichy  with 2600sq.ft.There are various facilities available...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal22">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="12galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">shyam vaccants</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is located at entry of trichy with 1600sq.ft.There are various facilities available...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal23">More</a>
+		   </div>
+		</div>
+	</div>
+	</div>
+	<br>
+	<h1 data-aos="fade-down"style="color:white;"><center>TUTICORIN</center></h1>
+	<br><br>
+	<div data-aos="fade-up"class="row">
+	<div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+		 </div>
+		 <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="13galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Jeeva lands</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is Placed at heart of tuticorin with 1000sq.ft.There are various facilities available...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal24">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 mid">
+		  <div class="card" style="background-color:white;">
+		  <img src="14galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Guru vaccants</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is located at east of tuticorin with 2800sq.ft.There facilities available are as...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal25">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="15galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">Priya Bhavan</h4>
+			  <p class="card-text" style="background-color:white;">
+			    The priya bhavan farms is situated at near bishop godwell in tuticorin with 950sq.ft.The features of lands are...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal26">More</a>
+		   </div>
+		</div>
+	</div>
+	</div>
+	<br><br>
+	<div data-aos="fade-up"class="row">
+	   <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+		 </div>
+		 <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="16galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">va.vu.si grounds</h4>
+			  <p class="card-text" style="background-color:white;">
+			   One of the residential plots of tuticorin with 1000sq.ft.There are numerous features exists...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal27">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 mid">
+		  <div class="card" style="background-color:white;">
+		  <img src="17galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">rishab plots</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is situated at west of tuticorin with 800sq.ft.The available facilities are tremendous...</p>
+		      <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal28">More</a>
+		   </div>
+		</div>
+	</div>
+	<div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+		  <div class="card" style="background-color:white;">
+		  <img src="18galtil.jpg" class="card-img-top">
+		  <div class="card-body">
+		      <h4 class="card-title">parveen base</h4>
+			  <p class="card-text" style="background-color:white;">
+			    It is positioned at tuticorin with 3600sq.ft.There are various facilities available...</p>
+		     <a class="btn btn-primary" data-toggle="modal" data-target="#largeModal29">More</a>
+		   </div>
+		</div>
+	</div>
+	</div>
+</div>
+
+ 
+
+  <!-- Modal -->
+  <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">KP nagar</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="gallery1fin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>>It is located at interior of madurai with 1500sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 100 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal1" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Bharat nagar</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="land1fin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>>It is located at outer of madurai with 1400sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal2" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">RK plots</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="gallery9fin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p> It is located at ring road of madurai with 2500sq.ft<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal3" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Suriya vaccants</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="gallery3fin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>  One of the residential plots of madurai with 3000sq.ft<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal4" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">PR Groups plots </h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="gallery5fin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p> It is situated at mid of madurai with 2000sq.ft<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal5" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Rooba estates </h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="gallery7fin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p> It is located at entry of madurai with 2500sq.ft<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal6" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Royal city </h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="sidemodfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p> It is located at interior of chennai with 500sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal7" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Rp lands </h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="sitemod1fin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p> It is located at outer of chennai with 1600sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal8" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">RJ Grounds </h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="sitemod2fin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p> It is located at near chengalpat in chennai with 2500sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal9" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Blessey plots </h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="sitemod3fin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p> One of the residential plots of chennai with 1000sq.ft<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal10" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Ranjit hectares </h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="sitemod4fin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>It is situated at west of chennai with 2000sq.ft<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="largeModal11" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Restro farms </h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="sitemod5fin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>It is located at entry of chennai with 1600sq.ft<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal12" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Lakshman Compounds </h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="1modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>It is Placed at heart of coimbatore with 900sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal13" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Dhruv arch </h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="2modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>It is located at outer of coimbatore with 1800sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal14" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Rosy Borders</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="3modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>The Rosy borders is situated at near Fun mall in coimbatore with 1950sq.ft<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal15" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Sai lands</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="4modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>One of the residential plots of coimbatore with 1000sq.ft<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal16" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Noor plots</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="5modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>It is situated at west of coimbatore with 2000sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal17" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">velliangiri base</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="6modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>It is positioned at foothills of velliangiri in coimbatore with 3600sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal18" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">siva circle</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="7modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>It is located at east of trichy with 3500sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal19" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Rx square</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="8modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>It is located at west of trichy with 3700sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal20" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">ashwin promo</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="9modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>It is located at north of trichy with 2800sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal21" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close" " data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Bhuvi farms</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="10modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>One of the residential plots in trichy  with 1000sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div> 
+<div class="modal fade" id="largeModal22" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close"  data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Raksha base</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="11modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>It is situated at south of trichy  with 2600sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal23" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close"  data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">shyam vaccants</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="12modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>It is located at entry of trichy with 1600sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal24" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close"  data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Jeeva lands</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="13modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>It is Placed at heart of tuticorin with 1000sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal25" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close"  data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Guru vaccants</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="14modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>It is located at east of tuticorin with 2800sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal26" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close"  data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Priya Bhavan</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="15modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>The priya bhavan farms is situated at near bishop godwell in tuticorin with 950sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal27" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close"  data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">va.vu.si grounds</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="16modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>One of the residential plots of tuticorin with 1000sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal28" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close"  data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">rishab plots</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="17modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>It is situated at west of tuticorin with 800sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="largeModal29" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button onClick="window.location.href=window.location.href" type="submit" class="close"  data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">parveen base</h4>
+      </div>
+      <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
+        <img src="18modfin.jpg">
+		</img>
+      </div>
+	  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+      </div>
+	  <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5"><p>It is positioned at tuticorin with 3600sq.ft.<br><br>>There are various 24X7 hrs facilities like Medical Services,Emergency Services,Transportation services etc..<br><br>>From creamy and rich the grossaries available from  nearby supermarket and ordinary shop<br><br>>The ground water is available within 70 ft from a bore well<br><br>>Here salt water is available in 24X7 via common pipe for this area.<br><br>>The Multispeciality hospital is there for all types of illness<br><br>>Famous school is here like primary to the Higher secondary within 3km from our location.<br><br>Familiar Engineering and arts and science colleges is available within 4 kms from our location.
+	  </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div id="contactus"  class="contact">
+     <h1 data-aos="fade-down" style="color:white;"><center>Contact Us</center></h1>
+     <div data-aos="fade-up-right" class="contact-form">
+	 <form action="mail.php" id="contact-form" method="POST">
+	   <div class="form-items">
+	      <input type="text" class="input" name="Username" id="Usename" placeholder="Username">
+		  <i class="fas fa-user"></i>
+	   </div>
+	   <div class="form-items">
+	      <input type="text" class="input" placeholder="Email">
+		   <i class="fas fa-envelope"></i>
+	   </div>
+	   <div class="form-items">
+	      <input type="text" class="input" name="Subject" id="Subject" placeholder="Subject">
+		  <i class="fas fa-address-book"></i>
+	   </div>
+	   <div class="form-items">
+	      <textarea class="input message" cols="30" rows="10" placeholder="Message........."></textarea>
+	   </div>
+	   <div>
+	   <input type="submit" value="send" class="submit">
+	   <i class="fas fa-arrow-right"></i>
+	   </div>
+	  
+       <div class="social-icons">
+	       <div class="facebook">
+			<i class="fab fa-facebook-f"></i>
+			</div>
+		    <div class="twitter">
+			<i class="fab fa-twitter"></i>
+			</div>
+		    <div class="google">
+			<i class="fab fa-google-plus-g"></i>
+			</div>
+	  </div>
+	  
+     </div>   
+</div>
+ <div class="row">
+  <div class="column1">
+  	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1673.3321225384977!2d78.14553765802725!3d9.93164789822452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5b73fb25c1b%3A0x84b933bbdbc63cab!2s37%2C%2029%2C%20Maruthu%20Pandiyar%20St%2C%20Managiri%2C%20KK%20Nagar%2C%20Tamil%20Nadu%20625020!5e1!3m2!1sen!2sin!4v1578011210826!5m2!1sen!2sin" class="mappu" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+  <div class="column2" style="background:#d7dbdd;">
+  <div class="row">
+  <div class="map">
+  <i class="fas fa-map-marker-alt"></i>
+  <br>
+  <text class="notif">37/29,Maruthupandiyar st,<div class="spun">K.K.Nagar,Madurai</div></text>
+  </div>
+  <div class="phone">
+  <i class="fas fa-phone-square"></i>
+  <br>
+  <text class="notif1">98947 19811<div class="spun1">99440 19816</div></text>
+  <div class="mail">
+  <i class="fas fa-envelope"></i>
+  <br>
+  <text class="notif2">velanvoo@gmail.com</text>
+  </div>
+  </div>
+  </div>
+</div>
+<div class="row" style="width:100%; height:1px; border:2px solid #4169E1;">
+</div>    
+<div id="footer" class="foot"style="color:white;">
+
+<div class="row">
+<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6 mobm"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Copyrights ©2020.RJ REAL <span style="color:#4169E1;">ESTATE</span> - All Rights Reserved</div>
+<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4"></div>
+<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 mobm">Designed by </div>
+</div>
+</div>
+
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+	
+<script src="https://cdnjs.cloudfare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="aos.js"></script>
+<script>
+AOS.init({
+  duration: 2000,
+  });
+</script> 
+<script>
+function refreshPage(){
+    window.location.reload();
+} 
+</script>
+<script>
+
+$(document).ready(function(){
+    $( "a.scrollLink" ).click(function( event ) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 1000);
+    });
+});
+</script>
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 50 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
+$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top}, 1400);return false})})
+</script>
+<script>
+$('html').css('overflow-x', 'initial');
+
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+function openModal1() {
+  document.getElementById("myModal1").style.display = "block";
+}
+
+// Close the Modal
+function closeModal1() {
+  document.getElementById("myModal1").style.display = "none";
+}
+function openModal2() {
+  document.getElementById("myModal2").style.display = "block";
+}
+
+// Close the Modal
+function closeModal2() {
+  document.getElementById("myModal2").style.display = "none";
+}
+function openModal3() {
+  document.getElementById("myModal3").style.display = "block";
+}
+
+// Close the Modal
+function closeModal3() {
+  document.getElementById("myModal3").style.display = "none";
+}
+function openModal4() {
+  document.getElementById("myModal4").style.display = "block";
+}
+
+// Close the Modal
+function closeModal4() {
+  document.getElementById("myModal4").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script><script>  
+function replace() {
+  document.getElementById("div1").style.display="block";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="none";
+}
+function replace1() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="block";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="none";
+}
+function replace2() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="block";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="none";
+}
+function replace3() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="block";
+  document.getElementById("div5").style.display="none";
+}
+function replace4() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="block";
+}
+</script>
+ <script>
+  //$(document).ready(function() { // better to use 
+  //  $('.List li').on('click touchstart', function() {
+   //     $('.button').slideDown('500');
+    });
+});</script>
+<script>
+$(document).ready(function() {
+   $("#myCarousel").swiperight(function() {
+      $(this).carousel('prev');
+    });
+   $("#myCarousel").swipeleft(function() {
+      $(this).carousel('next');
+   });
+});
+</script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+<script>
+ $(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+	items:3,
+	itemsDesktop:[1000,3],
+	itemsDesktopSmall:[979,2],
+	itemsTablet:[768,2],
+	itemsMobile:[650,1],
+	pagination:true,
+	autoPlay:true
+	})
+	});
+	</script>
+</body>
+</html>

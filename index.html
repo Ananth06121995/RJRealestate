@@ -1,0 +1,2117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, "/>
+    <meta charset="UTF-8">
+	<title>Responsuive Sliding Menu</title>
+	<link rel="stylesheet" type="text/css" href="aos.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://zeptojs.com/zepto.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/assets/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!--Bootstrap-->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+	
+	html, body{
+	 max-width: 100%;
+    overflow-x: hidden;
+	}
+	.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+	.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position:relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 120px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  position:relative;
+  padding:12px 16px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;padding:5px 5px 5px 5px; width:149px;margin-left:0px;margin-right:0px;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  position:absolute;
+  
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #4169E1;
+  padding: 24px 25px;
+   position: relative;
+}
+	
+	.centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      }
+	  .text{
+	  font-size: 60px;
+	  color:#fff;
+	  animation-duration: 4s;
+      animation-delay: 2s;
+      animation-iteration-count: 1;
+	  }
+	  .text1{
+	  font-size: 60px;
+	  color:#fff;
+	  animation-duration: 4s;
+      animation-delay: 2s;
+      animation-iteration-count: 1;
+	  }
+	   .text2{
+	  
+	  font-size: 60px;
+	  color: #FBF4B5;
+	  animation-duration: 4s;
+      animation-delay: 2s;
+      animation-iteration-count: 1;
+	  }
+	 
+.about-us {
+	height: 500px;
+	margin-top: 1500px;
+	background-image:url('about us2.jpg');
+	width: 100%;
+	}
+ 
+ .title{
+    margin-left: 600px;
+	color: white;
+	}
+  .mod
+  {
+    margin-top:80px;
+	
+  }
+	.word{
+    margin-top: 80px;
+	color: white;
+	font-size: 25px;
+	}
+	.head{
+	 font-size: 22px;
+	 color: black;
+	 }
+	 .doing{
+	 background-color:#d7dbdd;
+	 height:350px;
+	 margin-top:-20px;
+	 }
+   
+	 .by{
+	 margin-left: 30px;
+	 }
+	 
+	 .sy{
+	 margin-top:30px;
+	 margin-left: 120px;
+	 }
+	 .ry{
+	 margin-left: 90px;
+	 margin-top:-30px;
+	 }
+	 
+	 .sites{
+	 height: 800px;
+	margin-top: 500px;
+	background-image:url('sites.jpg');
+	bakground-image: no repeat;
+	
+	}
+	.title1
+	{
+	margin-left: 600px;
+	color: white;
+	}
+	.gtext{
+	 font-size: 25px;
+	 }
+	.btn {
+     border: 2px solid black;
+     background-color: white;
+     color: black;
+     padding: 14px 28px;
+     font-size: 16px;
+     cursor: pointer;
+        }
+     .info {
+     border-color: #2196F3;
+     color: dodgerblue
+          }
+
+     .info:hover {
+      background: #2196F3;
+      color: white;
+          }
+	.btn info {
+	 margin-left: 250px;
+	
+	 }
+	 .row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color:white ;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo1 {
+  opacity: 0.6;
+  margin-left: 400px;
+}
+.demo2 {
+  opacity: 0.6;
+  margin-left: 200px;
+}
+.demo3 {
+  opacity: 0.6;
+  margin-left: 0px;
+}
+.demo4 {
+  opacity: 0.6;
+  margin-left: -200px;
+}
+.demo5{
+ opacity: 0.6;
+ margin-top: -50px;
+ margin-left: 800px;
+ }
+ .demo6{
+ opacity: 0.6;
+ margin-top: -50px;
+ margin-left: 900px;
+ }
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+  border: 4px solid black;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.outline{
+  border:4px solid white;
+  }
+  .testi{
+   height: 700px;
+   background-image:url('testimonial.jpg');
+   background-image: no-repeat;
+   margin-top: 700px;
+   }
+   .testimonial{
+   background: white;
+   text-align: center;
+   padding: 30px 30px 50px;
+   margin: 0 15px 100px;
+   position: relative;
+   margin-top:168px;
+   
+   }
+   .testimonial:before,
+   .testimonial:after{
+    content: "";
+	border-top: 40px solid white;
+	border-right: 125px solid transparent;
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	}
+	.testimonial:after{
+	 border-right:none;
+	 border-left: 125px solid transparent;
+	 left: auto;
+	 right: 0;
+	 }
+	 
+	 .testimonial .icon{
+	 display: inline-block;
+	 font-size: 50px;
+	 color:#3399ff;
+	 }
+	 .testimonial .description{
+	 font-size: 16px;
+	 color: #777;
+	 text-align:justify;
+	 margin-bottom: 30px;
+	 opacity: 0.9;
+	 letter-spacing: -1px;
+	 }
+	 .testimonial .testimonial-content{
+	 width: 100%;
+	 position: absolute;
+	 left: 0;
+	 }
+	 .testimonial .pic{
+	 display: inline-block;
+	 border: 6px solid white;
+	 border-radius: 50%;
+	 box-shadow: 0 0 2px 2px #1a8cff;
+	 z-index: 1;
+	 position: relative;
+	 }
+	 .testimonial .pic img{
+	 width: 100%;
+	 height: auto;
+	 }
+	 .testimonial .title{
+	 font-size: 15px;
+	 font-weight: bold;
+	 color: white;
+	 text-transform: capitalize;
+	 margin: 0 0 5px 0;
+	 }
+	 
+	 
+	 .testimonial .heading{
+	 margin-top:3px;
+	 font-size: 18px;
+	 }
+      .testimonial .heading1{
+	 margin-top:-1px;
+	 font-size: 12px;
+	 }
+	 
+	 
+	 .pic img{
+	  width: 100px !important;
+	  height: 50px;
+	  }
+	  .owl-theme .owl-controls{
+	  margin-top:70px;
+	  }
+	  .contact {
+	   
+	  margin-top:500px; 
+     background: url(dup4.jpg);
+     background-size: cover;
+	 height: 670px;
+     overflow: hidden;
+	  }
+	  .contact-form{
+	  width: 350px;
+	  background: #000000;
+	  padding: 50px;
+	  margin: 100px auto;
+	  border-radius: 30px;
+	  position: relative;
+	  margin-top:40px;
+	  }
+	  .form-items{
+	  width: 100%;
+	  }
+	  .form-items .input{
+	  width: 100%;
+	  margin-bottom: 12px;
+	  padding: 15px 40px;
+	  box-sizing: border-box;
+	  background: #ebeef1;
+	  border: 0;
+	  outline: none;
+	  border-radius: 30px;
+	  }
+	  .form-items .input.message{
+	  height: 125px;
+	  border-radius: 15px;
+	  margin-bottom: 30px;
+	  padding: 15px;
+	  background: #ebeef1;
+	  resize: none;
+	  }
+	  .submit{
+	  background:#4169E1;
+	  text-align: center;
+	  color: #fff;
+	  padding:12px;
+	  border-radius:25px;
+	  cursor:pointer;
+	  width: 250px;
+	  }
+	  .submit .fas{
+	  margin-left: 10px;
+	  font-size: 12px;
+	  }
+	  .form-items{
+	  position: relative;
+	  }
+	  
+	  .form-items .fas{
+	  position: absolute;
+	  top: 15px;
+	  left: 15px;
+	  }
+	  .social-icons{
+	  position: absolute;
+	  bottom: -25px;
+	  left: 50%;
+	  transform: translateX(-50%);
+	  width: 200px;
+	  display: flex;
+	  justify-content: space-around;
+	  }
+	  .social-icons div{
+	  width: 50px;
+	  height: 50px;
+	  border-radius: 50%;
+	  position: relative;
+	  cursor: pointer;
+	  }
+	   .social-icons div .fab{
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+	  color: #fff;
+	  }
+	  .social-icons div.facebook{
+	  background:#5178d9;
+	  }
+	  .social-icons div.twitter{
+	  background:#41caf6;
+	  }
+	  .social-icons div.google{
+	  background:#FF0000;
+	  }
+	  .column1 {
+       float: left;
+       width: 50%;
+	   border: 2px solid black;
+	   height: 400px;
+             }
+	   .mappu{
+	   height: 400px;
+	   width:700px;
+	   }
+		.column2{
+       background-color: #d7dbdd;
+	   height: 400px;
+	   }
+		.map{
+		font-size: 50px;
+		margin-left: 780px;
+		}
+		.notif{
+		font-size: 14px;
+		margin-left:-10px;
+		}
+        .spun{
+		margin-top:-5px;
+		margin-left:-10px;
+		}
+		.phone{
+		margin-top:-145px;
+		margin-left:1250px;
+		font-size: 50px;
+		}
+		.notif1{
+		font-size: 14px;
+		margin-left: -20px;
+		margin-bottom: 500px;
+		}
+		.mail{
+		font size: 50px;
+		margin-left:-200px;
+		}
+		.notif2{
+		font-size: 14px;
+		margin-left:-30px;
+		margin-bottom: -370px;
+		}
+		.spun1{
+		margin-left: -20px;
+		margin-top: -10px;
+		}
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+             }
+			.foot{
+         width: 100%;
+         height: 70px;
+         background-color:#000000;  
+		 }	
+            .mobm{
+         margin-top:23px;
+                 }		
+.scrolltop {
+	display:none;
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	bottom:20px;
+	right:10px;	
+}
+.scroll {
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	background:#1E90FF;
+	padding:20px;
+	text-align: center;
+	margin: 0 0 0 0;
+	cursor:pointer;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover {
+	background:#5178d9;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover .fa {
+	padding-top:-10px;
+}
+.scroll .fa {
+    color:#fff;
+	font-size:30px;
+	margin-top:-5px;
+	margin-left:1px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}				 
+	@media  (max-width: 767px){
+	
+	.nav{
+   width: 103%;
+   }
+   .image{
+    width:200px;
+	height:60px;
+	}
+	   .myCarousel
+{
+	position: fixed;
+	cursor: pointer;
+
+	
+}	
+.carousel-inner > .item > img {
+    margin:  auto;
+    padding-top: 70px;
+    text-align: center;
+	width: 105%;
+	
+	}
+
+	  .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+	  
+      }
+	  .text{
+	  width: 150px;
+	  font-size: 20px;
+	  color:#fff;
+	 
+	  }
+	   .text1{
+	  width: 150px;
+	  font-size: 20px;
+	  color:#fff;
+	  }
+	  .text2{
+	  width: 150px;
+	  font-size: 20px;
+	  color: #FBF4B5;
+	  }
+	  .button {
+      background-color: #9932CC; ; /* Green */
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: auto;
+	  position: absolute;
+	  }
+	  .button1
+	  {
+	   left:23%;
+	   cursor: auto;
+	  }
+       .button2 {
+      background-color: #b3c6ff;  /* Green */
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+	  position:absolute;
+	  
+}
+	  .button3 {border-radius: 42px;
+	  left: 23%;
+	  text-decoration: none;
+	  }
+	   a:hover { 
+            text-decoration: none;
+			color: #fff;
+	
+			}
+	  .button2:hover
+	  {
+	  background-color:#809fff;
+	  }
+	   .button4 {
+      background-color: #994d00;  /* Green */
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+	  position:absolute;
+	  
+}
+	  .button5 {border-radius: 42px;
+	  left: 28%;
+	  text-decoration: none;
+	  }
+	   a:hover { 
+            text-decoration: none;
+			color: #fff;
+	
+			}
+	  .button4:hover
+	  {
+	  background-color: #4d2600;
+	  }
+.about-us {
+	margin-top: 600px;
+	background-image:url('about us2.jpg');
+	 max-width: 100%;
+	overflow-x: hidden;
+   	
+	
+	}
+	.mod
+  {
+    margin-top: -10px;
+	height: 150px;
+	width: 150px;
+	margin-left:100px;
+	}
+	 .word{
+    margin-top: -10px;
+	color: white;
+	font-size: 15px;
+	margin-left: 10px;
+	}
+	.title{
+    font-size:20px;
+	margin-left: 153px;
+	}
+	.doing{
+	 background-color:#d7dbdd;
+	 height:600px;
+	 }
+	.by{
+	height:150px;
+	width:150px;
+	margin-left: 100px;
+	}
+	.sy{
+	height:150px;
+	width:150px;
+	margin-left: 110px;
+	}
+	.ry{
+	height:200px;
+	width:200px;
+	margin-left: 80px;
+	margin-top: 3px;
+	}
+   .sites{
+	height: 550px;
+	margin-top: 200px;
+	background-image:url('sites.jpg');
+	bakground-image: no repeat;
+    }
+	.title1{
+	   font-size:20px;
+	   margin-left: 160px;
+	   }
+	 .gtext{
+	 font-size: 15px;
+	 }
+	 .btn {
+     border: 2px solid black;
+     background-color: white;
+     color: black;
+     padding: 7px 14px;
+     font-size: 16px;
+     cursor: pointer;
+	 }
+	 .btn info {
+	 margin-left: 150px;
+	 
+	 }
+	 .info {
+     border-color: #2196F3;
+     color: dodgerblue
+          }
+
+     .info:hover {
+      background: #2196F3;
+      color: white;
+          }
+	.btn info {
+	 margin-left: 250px;
+	 }
+	.row > .column {
+  padding-right: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo1 {
+  opacity: 0.6;
+  margin-left: 400px;
+}
+.demo2 {
+  opacity: 0.6;
+  margin-left: 200px;
+}
+.demo3 {
+  opacity: 0.6;
+  margin-left: 0px;
+}
+.demo4 {
+  opacity: 0.6;
+  margin-left: -200px;
+}
+.demo5{
+ opacity: 0.6;
+ margin-top: -50px;
+ margin-left: 800px;
+ }
+ .demo6{
+ opacity: 0.6;
+ margin-top: -50px;
+ margin-left: 900px;
+ }
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+  border: 4px solid black;
+  height: 100px;
+  width: 100px;
+  margin-left:50px;
+  
+}
+#2{
+  padding-left: 5px;
+  }
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.outline{
+  border:4px solid white;
+  }
+  .testi{
+   height: 600px;
+   }
+  .testimonial{
+   background: white;
+   text-align: center;
+   margin-left: 30px;
+   margin-right: 30px;
+   position: relative;
+   margin-top:70px;
+   
+   }
+   .testimonial:before,
+   .testimonial:after{
+    content: "";
+	border-top: 40px solid white;
+	border-right: 125px solid transparent;
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	}
+	.testimonial:after{
+	 border-right:none;
+	 border-left: 125px solid transparent;
+	 left: auto;
+	 right: 0;
+	 }
+	 .owl-theme .owl-controls{
+	  margin-top:20px;
+	  }
+	 .contact{  
+	 margin-top:300px; 
+     background: url(dup4m.jpg);
+	 background-repeat: no-repeat;
+     overflow: hidden;
+	 height: 500px;
+	 }
+	 .form{
+	  width: 250px;
+	  background: #000000;
+	  padding: 50px;
+	  margin: 100px auto;
+	  border-radius: 30px;
+	  position: relative;
+	  margin-top:-5px;
+	  height: 400px;
+	  
+	  }
+	  .form-items{
+	  width: 100%;
+	  }
+	  .form-items .input{
+	  width: 130%;
+	  margin-bottom: 12px;
+	  padding: 15px 40px;
+	  box-sizing: border-box;
+	  background: #ebeef1;
+	  border: 0;
+	  outline: none;
+	  border-radius: 30px;
+	  margin-left:-20px;
+	  }
+	  .form-items .input.message{
+	  height: 125px;
+	  border-radius: 15px;
+	  margin-bottom: 30px;
+	  padding: 15px;
+	  background: #ebeef1;
+	  resize: none;
+	  }
+	  .butn{
+	  background:#4169E1;
+	  text-align: center;
+	  color: #fff;
+	  padding:12px;
+	  border-radius:25px;
+	  cursor:pointer;
+	  width: 200px;
+	  margin-right:-49px;
+	  margin-left:-20px;
+	  margin-top: -20px;
+	  }
+	  .butn .fas{
+	  margin-left:10px;
+	  font-size: 12px;
+	  }
+	  .form-items{
+	  position: relative;
+	  }
+	  
+	  .form-items .fas{
+	  position: absolute;
+	  top: 15px;
+	  left: 2px;
+	  }
+	  .social-icons{
+	  position: absolute;
+	  bottom: -25px;
+	  left: 50%;
+	  transform: translateX(-50%);
+	  width: 200px;
+	  display: flex;
+	  justify-content: space-around;
+	  }
+	  .social-icons div{
+	  width: 50px;
+	  height: 50px;
+	  border-radius: 50%;
+	  position: relative;
+	  cursor: pointer;
+	  }
+	   .social-icons div .fab{
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+	  color: #fff;
+	  }
+	  .social-icons div.facebook{
+	  background:#5178d9;
+	  }
+	  .social-icons div.twitter{
+	  background:#41caf6;
+	  }
+	  .social-icons div.google{
+	  background:#FF0000;
+	  }
+	  .column1 {
+       float: left;
+       width: 40%;
+	   border: 2px solid black;
+	   height: 250px;
+	   width:200px
+	   }
+	   .mappu{
+	   height:250px;
+	   width:200px;
+	   }
+	 .column2{
+       background-color: #d7dbdd;
+	   height: 250px;
+	   }
+	   
+	   
+	</style>
+</head>
+<body>
+<audio controls autoplay loop style="display:none;">
+        <source src="peaceful.mp3" type="audio/mpeg"/>
+		</audio>  
+
+
+<div class='thetop'></div>
+	<div data-aos="fade-down" id="navbar" class="nav" style="position:fixed;z-index: 5;width: 100%;">
+		<div class="nav_header">
+			<div class="nav_title">
+            <img src="Real.png" class="image"/>
+            </div>
+        </div>
+        <div class="nav_btn" id="home">
+            <label for="nav_check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <input type="checkbox" name="" id="nav_check">
+        <div class="nav_links" style="font-family:Times New Roman;z-index: 5;">
+            <a href="#home" class="scrollLink">HOME</a>
+            <a href="#about-us" class="scrollLink">ABOUT US</a>
+            <a href="#sites" class="scrollLink">SITES</a>
+             <div class="dropdown"style="color:white;">
+             <button class="dropbtn">DOCUMENTS
+			 <i class="fa fa-caret-down"></i></button>
+             <div class="dropdown-content">
+                   <a href="sight.html" class="context">Sight Features</a>
+                   <a href="vision.html" class="context">Vision</a>
+                   <a href="mission.html" class="context">Mission</a>
+             </div>
+             </div> 
+            <a href="#testimonials" class="scrollLink">TESTIMONIALS</a>
+            <a href="#contactus" class="scrollLink">CONTACT</a>
+        </div>
+	</div>
+	
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-touch="true" style="position:absolute;z-index: 1;width: 105%;">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" style="position:absolute;z-index: 10;">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  
+    </ol>
+
+    <!-- Wrapper for slides -->
+    
+	<div data-aos="fade-up"class="carousel-inner" role="listbox" style="position:relative;z-index: 1;width: 105%;">
+      <div class="item active">
+        <img src="image1.jpg"  alt="Los Angeles" style="width:100%;">
+		<div class="centered">
+                    
+                    <div class="text animated zoomIn">Looking for <span style="color:#4169E1;">Land&nbsp;</span>Properties in<span style="color:#4169E1;">Tamil Nadu</span>???</div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image3.jpg" alt="Los Angeles" style="width:100%;">
+		<div class="centered">
+                    
+                    <div class="text1 animated zoomIn ">Welcome to<br> RJ Real <span style="color:#4169E1;">Estate</span>!!!</div>
+					
+                   
+        </div>
+      </div>
+	  <div class="item">
+        <img src="img22.jpg" alt="Los Angeles" style="width:2000px;">
+		<div class="centered">
+                    
+                    <div class="text2 animated fadeInDown"><span style="color:#000000;">Hire us!!</span> <br> To achieve your dream</div>
+					
+                   
+        </div>
+      </div>
+	
+     
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="position:absolute;z-index: 10;">
+      <span class="glyphicon glyphicon-chevron-left"style="margin-top:20px;"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next" style="position:absolute;z-index: 10;">
+      <span class="glyphicon glyphicon-chevron-right"style="margin-top:20px;"> </span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+ 
+ <div class="row">
+ <section id="about-us">
+        <div class="about-us">
+           <h1 data-aos="fade-up" class="title"> ABOUT US</h1>
+		   <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2 content"><img data-aos="fade-right"src="aboutusicon.png"class="mod"></img>
+		   </div>
+		   <div class="col-sm-9 col-xs-12 col-md-9 col-lg-9 word" style="color:white;"data-aos="fade-left"> Our company RJ Real Estate was started in 1999  by s.vadivelan who is the managing director and with more than 18 years experience in the land process.Since We are an upcoming company in the industry.We refer the empty lands to our customers.We are continually striving to be dynamic and innovative in our approach to real estate transactions and to find more effective and efficient ways of doing things.The Company's vision is for the people to have a land on their own.We are having the lands all over Tamil Nadu with a midst of lush green environs.Our complete motto is to satisfy the customer needs of referring a land at worthful price
+		   </div>
+		   <div class="col-sm-1 col-xs-12 col-md-1 col-lg-1">
+		   </div>
+        </div>
+ </div>
+ <div class="row">
+           <div class="doing">
+		   <center><h2 data-aos="fade-down"> What We Do</h2></center><br><br>
+		        <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
+				<img src="buy.png" data-aos="fade-right"class="by">
+				</img>
+				
+				</div>
+				
+				<div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
+				<img src="sale.png" data-aos="fade-up"class="sy"> 
+				</img>
+				</div>
+				<div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
+				<img src="consult.png"data-aos="fade-left" class="ry"> 
+				</img>
+				</div>
+		   </div>
+ </div>
+<div class="row" >
+         <div class="sites" id="sites">
+		 <h1 data-aos="fade-down"class="title1"> SITES</h1>
+		 <br>
+		 <center><text class="gtext" style="color:white;" data-aos="fade-down"> Choose the city from the following</text></center><br>
+         <div class="row">
+         <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3">
+		 </div>
+		 <div data-aos="fade-left"class="col-sm-6 col-xs-12 col-md-6 col-lg-6">
+		 <button class="btn info" style="border-radius:30px;" onclick="replace()">Madurai</button>
+		 <button class="btn info" style="border-radius:30px;" onclick="replace1()">Chennai</button>
+		 <button class="btn info" style="border-radius:30px;" onclick="replace2()">Coimbatore</button>
+		 <button class="btn info" style="border-radius:30px;" onclick="replace3()">Trichy</button>
+		 <button class="btn info" style="border-radius:30px;" onclick="replace4()">Tuticorin</button>
+		 
+		 
+		 </div> 
+		 <div class="col-sm-3 col-xs-12 col-md-3 col-lg-3">
+		 </div>
+		 </div>
+<br>	 
+   <div data-aos="fade-up"id = "div1" style="display:block">
+   <div class="row">
+       <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+       </div>
+  <div class="column">
+    <img src="gallery2.jpg" id="1" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="ga.jpg"  id="2" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="gal.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+ 
+</div><br><br><br>
+<div class="row">
+ <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+ </div>
+  
+  <div class="column">
+    <img src="gallery4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="gallery6.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="gallery8.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+ 
+</div>
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="gallery1.jpg
+	  " style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="land1.jpg" style="width:100%" class="outline">
+	  </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="gallery9.jpg" style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="gallery3.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="gallery5.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="gallery7.jpg" style="width:100%"  class="outline">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo1" src="thumb.jpeg" onclick="currentSlide(1)">
+    </div>
+
+    <div class="column">
+      <img class="demo2" src="thumb1.jpg" onclick="currentSlide(2)">
+    </div>
+
+    <div class="column">
+      <img class="demo3" src="thumb2.jpg" onclick="currentSlide(3)">
+    </div>
+
+    <div class="column">
+      <img class="demo4" src="thumb3.jpg" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo5" src="thumb4.jpg" onclick="currentSlide(5)">
+   </div>
+   <div class="column">
+      <img class="demo6" src="thumb5.jpg" onclick="currentSlide(6)">
+   </div>
+  </div>
+</div>
+ </div> 
+<div id = "div2" style="display:none;">
+ <div class="row">
+       <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+       </div>
+  <div class="column">
+    <img src="sitegal.jpg" onclick="openModal1();currentSlide(7)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="sitegal1.jpg" onclick="openModal1();currentSlide(8)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="sitegal2.jpg" onclick="openModal1();currentSlide(9)" class="hover-shadow">
+  </div>
+ 
+</div><br><br><br>
+<div class="row">
+ <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+ </div>
+  
+  <div class="column">
+    <img src="sitegal3.jpg" onclick="openModal1();currentSlide(10)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="sitegal4.jpg" onclick="openModal1();currentSlide(11)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="sitegal5.jpg" onclick="openModal1();currentSlide(12)" class="hover-shadow">
+  </div>
+ 
+</div>
+<!-- The Modal/Lightbox -->
+<div id="myModal1" class="modal">
+  <span class="close cursor" onclick="closeModal1()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="sidemod.jpg
+	  " style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="sitemod1.jpg" style="width:100%" class="outline">
+	  </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="sitemod2.jpg" style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="sitemod3.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="sitemod4.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="sitemod5.jpg" style="width:100%"  class="outline">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo1" src="sitethumb.jpg" onclick="currentSlide(7)">
+    </div>
+
+    <div class="column">
+      <img class="demo2" src="sitethumb1.jpg" onclick="currentSlide(8)">
+    </div>
+
+    <div class="column">
+      <img class="demo3" src="sitethumb2.jpg" onclick="currentSlide(9)">
+    </div>
+
+    <div class="column">
+      <img class="demo4" src="sitethumb3.jpg" onclick="currentSlide(10)">
+    </div>
+    <div class="column">
+      <img class="demo5" src="sitethumb4.jpg" onclick="currentSlide(11)">
+   </div>
+   <div class="column">
+      <img class="demo6" src="sitethumb5.jpg" onclick="currentSlide(12)">
+   </div>
+  </div>
+</div>
+ </div>   
+ <div id = "div3" style="display:none;">
+ <div class="row">
+       <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+       </div>
+  <div class="column">
+    <img src="1gal.jpg" onclick="openModal2();currentSlide(13)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="2lag.jpg" onclick="openModal2();currentSlide(14)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="3gal.jpg" onclick="openModal2();currentSlide(15)" class="hover-shadow">
+  </div>
+ 
+</div><br><br><br>
+<div class="row">
+ <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+ </div>
+  
+  <div class="column">
+    <img src="4gal.jpg" onclick="openModal2();currentSlide(16)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="5gal.jpg" onclick="openModal2();currentSlide(17)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="6gal.jpg" onclick="openModal2();currentSlide(18)" class="hover-shadow">
+  </div>
+ 
+</div>
+<!-- The Modal/Lightbox -->
+<div id="myModal2" class="modal">
+  <span class="close cursor" onclick="closeModal2()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="1mod.jpg
+	  " style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="2mod.jpg" style="width:100%" class="outline">
+	  </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="3mod.jpg" style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="4mod.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="5mod.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="6mod.jpg" style="width:100%"  class="outline">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo1" src="1thumb.jpg" onclick="currentSlide(13)">
+    </div>
+
+    <div class="column">
+      <img class="demo2" src="2thumb.jpg" onclick="currentSlide(14)">
+    </div>
+
+    <div class="column">
+      <img class="demo3" src="3thumb.jpg" onclick="currentSlide(15)">
+    </div>
+
+    <div class="column">
+      <img class="demo4" src="4thumb.jpg" onclick="currentSlide(16)">
+    </div>
+    <div class="column">
+      <img class="demo5" src="5thumb.jpg" onclick="currentSlide(17)">
+   </div>
+   <div class="column">
+      <img class="demo6" src="6thumb.jpg" onclick="currentSlide(18)">
+   </div>
+  </div>
+</div>
+ </div>   
+ <div id = "div4" style="display:none;">
+ <div class="row">
+       <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+       </div>
+  <div class="column">
+    <img src="7gal.jpg" onclick="openModal3();currentSlide(19)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="8gal.jpg" onclick="openModal3();currentSlide(20)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="9gal.jpg" onclick="openModal3();currentSlide(21)" class="hover-shadow">
+  </div>
+ 
+</div><br><br><br>
+<div class="row">
+ <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+ </div>
+  
+  <div class="column">
+    <img src="10gal.jpg" onclick="openModal3();currentSlide(22)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="11gal.jpg" onclick="openModal3();currentSlide(23)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="12gal.jpg" onclick="openModal3();currentSlide(24)" class="hover-shadow">
+  </div>
+ 
+</div>
+<!-- The Modal/Lightbox -->
+<div id="myModal3" class="modal">
+  <span class="close cursor" onclick="closeModal3()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="7mod.jpg
+	  " style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="8mod.jpg" style="width:100%" class="outline">
+	  </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="9mod.jpg" style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="10mod.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="11mod.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="12mod.jpg" style="width:100%"  class="outline">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo1" src="7thumb.jpg" onclick="currentSlide(19)">
+    </div>
+
+    <div class="column">
+      <img class="demo2" src="8thumb.jpg" onclick="currentSlide(20)">
+    </div>
+
+    <div class="column">
+      <img class="demo3" src="9thumb.jpg" onclick="currentSlide(21)">
+    </div>
+
+    <div class="column">
+      <img class="demo4" src="10thumb.jpg" onclick="currentSlide(22)">
+    </div>
+    <div class="column">
+      <img class="demo5" src="11thumb.jpg" onclick="currentSlide(23)">
+   </div>
+   <div class="column">
+      <img class="demo6" src="12thumb.jpg" onclick="currentSlide(24)">
+   </div>
+  </div>
+</div>
+ </div> 
+<div id = "div5" style="display:none;">
+ <div class="row">
+       <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+       </div>
+  <div class="column">
+    <img src="13gal.jpg" onclick="openModal4();currentSlide(25)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="14gal.jpg" onclick="openModal4();currentSlide(26)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="15gal.jpg" onclick="openModal4();currentSlide(27)" class="hover-shadow">
+  </div>
+ 
+</div><br><br><br>
+<div class="row">
+ <div class="col-sm-2 col-xs-12 col-md-2 col-lg-2">
+ </div>
+  
+  <div class="column">
+    <img src="16gal.jpg" onclick="openModal4();currentSlide(28)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="17gal.jpg" onclick="openModal4();currentSlide(29)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="18gal.jpg" onclick="openModal4();currentSlide(30)" class="hover-shadow">
+  </div>
+ 
+</div>
+<!-- The Modal/Lightbox -->
+<div id="myModal4" class="modal">
+  <span class="close cursor" onclick="closeModal4()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="13mod.jpg
+	  " style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="14mod.jpg" style="width:100%" class="outline">
+	  </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="15mod.jpg" style="width:100%" class="outline">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="16mod.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="17mod.jpg" style="width:100%"  class="outline">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="18mod.jpg" style="width:100%"  class="outline">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo1" src="13thumb.jpg" onclick="currentSlide(25)">
+    </div>
+
+    <div class="column">
+      <img class="demo2" src="14thumb.jpg" onclick="currentSlide(26)">
+    </div>
+
+    <div class="column">
+      <img class="demo3" src="15thumb.jpg" onclick="currentSlide(27)">
+    </div>
+
+    <div class="column">
+      <img class="demo4" src="16thumb.jpg" onclick="currentSlide(28)">
+    </div>
+    <div class="column">
+      <img class="demo5" src="17thumb.jpg" onclick="currentSlide(29)">
+   </div>
+   <div class="column">
+      <img class="demo6" src="18thumb.jpg" onclick="currentSlide(30)">
+   </div>
+  </div>
+</div>
+ </div>
+ <div class="testi" id="testimonials">
+      <h1 data-aos="fade-down"style="color:white;"><center>Testimonials</center></h1>
+  <div class="container">	  
+   <div class="row">
+     <div id="testimonial-slider" class="owl-carousel">
+       <div data-aos="fade-up" class="testimonial">
+           <i class="icon fa fa-quote-left"></i>
+             <p class="description">
+               I Bought a land from RJ Real Estate company which is worthable for me according to my budget.I strongly recommend for those who buy lands at a lowest price with more benefits and sophistication</p>
+             <div class="testimonial-content">
+			    <div class="pic">
+				<img src="modi1.jpg" class="img-circle">
+				</div>
+				<div class="heading">Aravind</div>
+				<div class="heading1">Software developer</div>
+             </div>				
+		</div>
+		<div data-aos="fade-up"class="testimonial">
+           <span class="icon fa fa-quote-left"></span>
+             <p class="description">
+               As a customer I recommend RJ Real Estate company for those who searching for land properties at a affordable price.Not as a regular customer I prefer this company because of their genuinity and dedication towards job </p>
+             <div class="testimonial-content">
+			    <div class="pic">
+				<img src="kelavan.jpg" class="img-circle">
+				</div>
+				<div class="heading">Joseph</div>
+				<div class="heading1">Senior Tester</div>
+             </div>				
+		</div>
+		<div data-aos="fade-up" class="testimonial">
+           <span class="icon fa fa-quote-left"></span>
+             <p class="description">
+             I come to know RJ Real Estate by my friend referal.Based on his positive review about land that he bought from RJ Real Estate.I bought a land according to my budget as low investment and fullfillment about the land</p>
+             <div class="testimonial-content">
+			    <div class="pic">
+				<img src="alter.png" class="img-circle">
+				</div>
+				<div class="heading">Ragu</div>
+				<div class="heading1">Record clerk</div>
+             </div>				
+		</div>
+		<div data-aos="fade-up" class="testimonial">
+           <span class="icon fa fa-quote-left"></span>
+             <p class="description">
+             I hope all the assets from RJ Real Estate is loyalable and authoritable.Each and every Land property is allocated with the things that satisfy basic needs like water from borewell,Transportation services,shelter etc..</p>
+             <div class="testimonial-content">
+			    <div class="pic">
+				<img src="womb.jpg" class="img-circle">
+				</div>
+				<div class="heading">Nisha</div>
+				<div class="heading1">Data science Engineer</div>
+             </div>				
+		</div>
+		<div data-aos="fade-up" class="testimonial">
+           <span class="icon fa fa-quote-left"></span>
+             <p class="description">
+			 My allocated land is in very good condition like soil moisture and water comes from the borewell in 80 feet.I'll go with this company for buying another land in future.And the documents handy is perfect with all authorities</p> 
+			 
+			 </p>
+             <div class="testimonial-content">
+			    <div class="pic">
+				<img src="alter1.jpg" class="img-circle">
+				</div>
+				<div class="heading">Arun</div>
+				<div class="heading1">Market Analyst</div>
+				
+             </div>				
+		</div>
+		<div data-aos="fade-up" class="testimonial">
+           <span class="icon fa fa-quote-left"></span>
+             <p class="description">
+			 Moreover  the lands in all the locations was sold out at a reasonable price.I prefer this company for its friendly environment and convenient for me because all the places like school,college,shops,hotel etc ..from my location</p>
+			 <div class="testimonial-content">
+			    <div class="pic">
+				<img src="shadow.jpg" class="img-circle">
+				</div>
+				<div class="heading">Balan</div>
+				<div class="heading1">Politician</div>
+
+             </div>				
+		</div>
+	  </div>
+	  </div>
+    </div>		
+</div>
+<div id="contactus"  class="contact">
+     <h1 data-aos="fade-down" style="color:white;"><center>Contact Us</center></h1>
+     <div data-aos="fade-up-right" class="contact-form">
+	 <form method="post" action="meil.php" id="contact-form">
+	   <div class="form-items">
+	      <input type="text" class="input" name="name" id="name" placeholder="name">
+		  <i class="fas fa-user"></i>
+	   </div>
+	   <div class="form-items">
+	      <input type="email" class="input" name="email" id="email" placeholder="Email">
+		   <i class="fas fa-envelope"></i>
+	   </div>
+	   <div class="form-items">
+	      <input type="text" class="input" name="subject" id="subject" placeholder="Subject">
+		   <i class="fas fa-envelope"></i>
+	   </div>
+	   <div class="form-items">
+	      <textarea id="message" name="message" class="input message" cols="30" rows="10" placeholder="Message........."></textarea>
+	   </div>
+	   <div>
+	   <button type="submit" name="submit" class="submit">Send
+	   <i class="fas fa-arrow-right"></i>
+	   </button>
+	   </div>
+	  
+       <div class="social-icons">
+	       <div class="facebook">
+			<i class="fab fa-facebook-f"></i>
+			</div>
+		    <div class="twitter">
+			<i class="fab fa-twitter"></i>
+			</div>
+		    <div class="google">
+			<i class="fab fa-google-plus-g"></i>
+			</div>
+	  </div>
+	 
+     </div>
+</form>	 
+</div>
+ <div class="row">
+  <div class="column1">
+  	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1673.3321225384977!2d78.14553765802725!3d9.93164789822452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5b73fb25c1b%3A0x84b933bbdbc63cab!2s37%2C%2029%2C%20Maruthu%20Pandiyar%20St%2C%20Managiri%2C%20KK%20Nagar%2C%20Tamil%20Nadu%20625020!5e1!3m2!1sen!2sin!4v1578011210826!5m2!1sen!2sin" class="mappu" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+  <div class="column2" style="background:#d7dbdd;">
+  <div class="row">
+  <div class="map">
+  <i class="fas fa-map-marker-alt"></i>
+  <br>
+  <text class="notif">37/29,Maruthupandiyar st,<div class="spun">K.K.Nagar,Madurai</div></text>
+  </div>
+  <div class="phone">
+  <i class="fas fa-phone-square"></i>
+  <br>
+  <text class="notif1">98947 19811<div class="spun1">99440 19816</div></text>
+  <div class="mail">
+  <i class="fas fa-envelope"></i>
+  <br>
+  <text class="notif2">velanvoo@gmail.com</text>
+  </div>
+  </div>
+  </div>
+</div>
+<div class="row" style="width:100%; height:1px; border:2px solid #4169E1;">
+</div>    
+<div id="footer" class="foot"style="color:white;">
+
+<div class="row">
+<div class="col-sm-6 col-xs-6 col-md-6 col-lg-6 mobm"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Copyrights ©2020.RJ REAL <span style="color:#4169E1;">ESTATE</span> - All Rights Reserved</div>
+<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4"></div>
+<div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 mobm">Designed by <br> M.ANANTHAKUMAR</div>
+</div>
+</div>
+
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="aos.js"></script>
+<script>
+AOS.init({
+  duration: 2000,
+  });
+</script>
+<script>
+
+$(document).ready(function(){
+    $( "a.scrollLink" ).click(function( event ) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 1000);
+    });
+});
+</script>
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 50 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
+$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top}, 1400);return false})})
+</script>
+<script>
+$('html').css('overflow-x', 'initial');
+
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+function openModal1() {
+  document.getElementById("myModal1").style.display = "block";
+}
+
+// Close the Modal
+function closeModal1() {
+  document.getElementById("myModal1").style.display = "none";
+}
+function openModal2() {
+  document.getElementById("myModal2").style.display = "block";
+}
+
+// Close the Modal
+function closeModal2() {
+  document.getElementById("myModal2").style.display = "none";
+}
+function openModal3() {
+  document.getElementById("myModal3").style.display = "block";
+}
+
+// Close the Modal
+function closeModal3() {
+  document.getElementById("myModal3").style.display = "none";
+}
+function openModal4() {
+  document.getElementById("myModal4").style.display = "block";
+}
+
+// Close the Modal
+function closeModal4() {
+  document.getElementById("myModal4").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script><script>  
+function replace() {
+  document.getElementById("div1").style.display="block";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="none";
+}
+function replace1() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="block";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="none";
+}
+function replace2() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="block";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="none";
+}
+function replace3() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="block";
+  document.getElementById("div5").style.display="none";
+}
+function replace4() {
+  document.getElementById("div1").style.display="none";
+  document.getElementById("div2").style.display="none";
+  document.getElementById("div3").style.display="none";
+  document.getElementById("div4").style.display="none";
+  document.getElementById("div5").style.display="block";
+}
+</script>
+ <script>
+  //$(document).ready(function() { // better to use 
+  //  $('.List li').on('click touchstart', function() {
+   //     $('.button').slideDown('500');
+    });
+});</script>
+<script>
+$(document).ready(function() {
+   $("#myCarousel").swiperight(function() {
+      $(this).carousel('prev');
+    });
+   $("#myCarousel").swipeleft(function() {
+      $(this).carousel('next');
+   });
+});
+</script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+<script>
+ $(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+	items:3,
+	itemsDesktop:[1000,3],
+	itemsDesktopSmall:[979,2],
+	itemsTablet:[768,2],
+	itemsMobile:[650,1],
+	pagination:true,
+	autoPlay:true
+	})
+	});
+	</script>
+</body>
+</html>
